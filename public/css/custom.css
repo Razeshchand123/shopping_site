@@ -1,0 +1,272 @@
+*{
+ 
+}
+body{
+    /* background: radial-gradient(#f53bd5, transparent); */
+    /* background-color: red;cus
+     */
+}
+
+.nav-link{font-weight: bold;}
+.svgcover{    margin-top: -10%;}
+
+
+
+nav,.one_prd_text{
+    background: radial-gradient(#f53bd5, transparent);
+    /* background-color:  #fd1bd7 ; */
+    margin: 0;
+   
+}
+
+/* dropdownmenu */
+
+
+.mainnav{margin: 0 auto;}
+li{list-style: none;}
+li a{text-decoration: none;}
+.dropdown-menuwala{z-index: 99; position: absolute; width:50px; opacity: 0;visibility: hidden;transition: ease-out .35s;-moz-transition: ease-out .35s;-webkit-transition: ease-out .35s;}
+
+.mainnav li{float: left;padding: 5px;border-left: 1px dotted #f53bd5;}
+.mainnav li:first-child{border: none;}
+.mainnav li a{ display: block;padding: 2%;color:black; text-transform: capitalize;}
+.mainnav li:hover{transition: ease-in .35s;-moz-transition: ease-in .35s;-webkit-transition: ease-in .35s;}
+.mainnav li:hover a{color: maroon;transition: ease-in .35s;-moz-transition: ease-in .35s;-webkit-transition: ease-in .35s;}
+
+.subs {position: relative;top: 0px;width: 175px;border-left: none !important; }
+.subs:last-child{border: none !important;}
+.hassubs:hover .dropdown-menuwala,.hassubs .hassubs:hover .dropdown-menuwala{opacity: 1;visibility: visible; transition: ease-in .35s;-moz-transition: ease-in .35s;-webkit-transition: ease-in .35s;}
+
+.mainnav li ul li:hover,.mainnav li ul li ul li:hover{transition: ease-in-out .35s;-moz-transition: ease-in-out .35s;-webkit-transition: ease-in-out .35s;}
+.mainnav li ul li:hover a,.mainnav li ul li ul li:hover a{color: maroon;transition: ease-in-out .35s;-moz-transition: ease-in-out .35s;-webkit-transition: ease-in-out .35s;}
+
+.hassubs .hassubs .dropdown-menuwala .subs{left: 25px;position: relative;width:50px;top: 0px;}
+.hassubs .hassubs .dropdown-menuwala{position: absolute;width:50px;left: 4px;top: 15px;opacity: 0;visibility: hidden;transition: ease-out .35s;-moz-transition: ease-out .35s;-webkit-transition: ease-out .35s;}
+
+  /* dropdown end */
+
+
+
+  .navcover{
+   color:black;
+   position: absolute;
+   top:13%;
+   /* left:30%; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-sm{
+    color: #b50697;
+}
+
+.parent{
+  position: relative;
+  overflow: hidden;
+}
+.text-content>a{color:white ;
+ font-size: 1.3em;
+ font-weight: bold;
+}
+.text-content{
+  /* background-color: rgb(0, 0, 0,0.5); */
+  background: radial-gradient(#b50697, transparent);
+   
+  height:100%;
+  width: 100%;
+  position: absolute;
+  right:0;
+  bottom:-100%;
+  /* padding: 5px; */
+box-sizing: border-box;
+transition: all 1s;
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+}
+.parent:hover .text-content{
+  bottom: 0%;
+  
+}
+/* model ko css */
+.details{
+  margin-left:2%;
+  color:black;
+  font-weight: normal;
+}
+.modelkoul>li{
+  color: #b50697;
+  font-weight: bold;
+  /* list-style: none; */
+}
+.tcolor{
+  color: #b50697;
+}
+.rang{
+  width: 14px;
+  height: 13px;
+ display: inline-block;
+  
+}
+
+.rang-red{background: red;}
+.rang-green{background: green;}
+.rang-black{background: black;}
+.rang-grey{background: grey;}
+.rang-white{background: whitesmoke;
+border:1px solid black;}
+
+.rang-other{background: radial-gradient(#b50697, transparent);}
+.sizescontrol{
+  border-bottom:1px solid #b50697;
+}
+.catacontrol{border-bottom:1px solid #b50697;
+             padding-right:1%;
+}
+
+
+
+
+
+
+
+
+#postimg{
+  display:none;
+}
+#labeforsetprofile,table,.bgg{
+  cursor: pointer;
+
+  background: radial-gradient(#f53bd5, transparent);
+ padding: 1%;
+}
+#imgspan{
+display: inline-block;
+
+
+}
+.text-capitalization {
+  text-transform: capitalize;
+}
+.btn-gulabi{
+  border:1px solid #b50697;
+  background: radial-gradient(#f53bd5, transparent);
+}
+
+
+/* tab  */
+.tab{
+  background: radial-gradient(#f53bd5, transparent);
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+.tab>.btn-gulabi{
+  border:0.1px solid #b50697
+}
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #b50697;
+  border-top: none;
+}
+
+.prakriya>li{
+ margin:10%;
+  background-color:#24021e;
+  box-shadow: 1px 2px 14px 8px #5a044b;
+}
+.prakriya>li>p{
+  padding-top:3%;
+  color:white;
+text-align: center;}
+
+
+/*hovereffect on main page */
+.text-content>a{color:white ;
+ font-size: 1.3em;
+ font-weight: bold;
+}
+.text-content{
+  /* background-color: rgb(0, 0, 0,0.5); */
+  background: radial-gradient(#b50697, transparent);
+   
+  height:100%;
+  width: 100%;
+  position: absolute;
+  right:0;
+  bottom:-100%;
+  /* padding: 5px; */
+box-sizing: border-box;
+transition: all 1s;
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+}
+.parent:hover .text-content{
+  bottom: 0%;
+  
+}
+
+/* 770px */
+@media screen and (max-width:770px){
+  table thead th small {padding:0;margin:0;}
+
+
+
+  .table th {padding: 0px;}
+  table thead th small {
+   font-size:66%;
+   padding: 0;
+   margin:0;
+  }
+
+
+
+}
+/* ========================== */
+@media screen and (max-width:576px){
+  .model {width:58% !important;}
+ 
+ }
+ /* ================================================== */
+@media screen and (max-width:576px){
+ .model {width:58% !important;}
+
+}
+/* ================ */
+@media screen and (max-width:997px){
+  table th, .table td {
+    padding: 0px;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+}
