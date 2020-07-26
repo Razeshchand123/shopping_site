@@ -108,7 +108,7 @@
             @yield('content')
         </main>
         <div class="d-flex justify-content-around w-100 footer p-1 align-items-center">
-            <a href="/about"><small class="pt-2 ">All 	&#169;  2020 reserved to Digital Bazar</small>
+            <a href="/about"><small class="pt-2 ">All 	&#169;  2020 Reserved to Digital Bazar</small>
       </a>
           <small>Developred By <a href="https://www.facebook.com/razesh.chand.1" target="_blank">Rajesh chand</a></small>
         

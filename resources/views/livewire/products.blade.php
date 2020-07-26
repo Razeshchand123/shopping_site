@@ -10,7 +10,7 @@
 <div class="col-sm-4  parent d-flex flex-column justify-content-center my-4">
 <!-- ----------------------------------------------------- -->
 @php   $path= trim($value->pi,"public"); @endphp
-       <img src=" http://127.0.0.1:8000/storage{{$path}}" alt="noimg" height="250" class="img-thumbnail">
+       <img src=" http://127.0.0.1:8000/storage{{$path}}" alt="noimg" height="250" class="rounded">
 
 
      <!-- slidehunewala transparent div start -->

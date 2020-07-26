@@ -1,7 +1,7 @@
 <div>
    
 
-<h3> <span class="text-capitalize tcolor">{{Auth()->user()->name}}</span > Fashion Zone मा स्वागत  छ |  हजुर लाई <i class="fas fa-heart tcolor"></i></h3>
+<h3> <span class="text-capitalize tcolor">{{Auth()->user()->name}}</span > Fashion Zone मा स्वागत  छ |  हजुर लाई  <i class="fas fa-praying-hands tcolor ml-2"></i></h3>
  <small class="text-capitalize">तपाई को उत्पादन लाई अन्तर रातरीय बजार मा पुगौने जीमेवारी हाम्रो</small>
 <hr class="w-100 mx-auto" style="background-color:#b50697">
 
