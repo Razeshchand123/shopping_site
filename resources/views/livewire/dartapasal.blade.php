@@ -1,7 +1,7 @@
 <div>
    
 
-<h3> <span class="text-capitalize tcolor">{{Auth()->user()->name}}</span > Fashion Zone मा स्वागत  छ |  हजुर लाई  <i class="fas fa-praying-hands tcolor ml-2"></i></h3>
+<h3> <span class="text-capitalize tcolor">{{Auth()->user()->name}}</span > Digital Bazar मा स्वागत  छ |  हजुर लाई  <i class="fas fa-praying-hands tcolor ml-2"></i></h3>
  <small class="text-capitalize">तपाई को उत्पादन लाई अन्तर रातरीय बजार मा पुगौने जीमेवारी हाम्रो</small>
 <hr class="w-100 mx-auto" style="background-color:#b50697">
 
@@ -47,7 +47,20 @@
                         <input wire:model="shopaddress" type="text " placeholder="पसल को ठेगाना: "  class="form-control">
                         @error("shopaddress") <small class="text-danger">{{ $message }}</small> @enderror <br>
 
-                       <label for="setprofile" id="labeforsetprofile" class="mt-2">
+                       
+
+                           
+                            <input wire:model="onername" type="text " placeholder="पसल धनी को नाम "  class="form-control">
+                            @error("onername") <small class="text-danger">{{ $message }}</small> @enderror <br>
+                  
+                            <input wire:model="onermobile" type="text " placeholder="पसल धनी को मोबाइल "  class="form-control">
+                            @error("onermobile") <small class="text-danger">{{ $message }}</small> @enderror <br>
+
+                         <br>   <input wire:model="oneremail" type="text " placeholder="पसल धनी को ईमेल"  class="form-control">
+                            @error("oneremail") <small class="text-danger">{{ $message }}</small> @enderror <br>
+
+
+                            <label for="setprofile" id="labeforsetprofile" class="mt-2">
                        @if ($slogo)
                          <img src="{{ $slogo->temporaryUrl() }}" height="100">
                          @endif
@@ -57,18 +70,8 @@
 
                         <i class="far fa-images fa-2x"></i></label>
                          <input  type="file"  wire:model="slogo"  class="d-none" id="setprofile">
-                         @error("slogo") <small class="text-danger">{{ $message }}</small> @enderror <br>
+                         @error("slogo") <small class="text-danger">{{ $message }}</small> @enderror <br><br>
 
-<hr>
-                           
-                            <input wire:model="onername" type="text " placeholder="पसल धनी को नाम "  class="form-control">
-                            @error("onername") <small class="text-danger">{{ $message }}</small> @enderror <br>
-                   <br>
-                            <input wire:model="onermobile" type="text " placeholder="पसल धनी को मोबाइल "  class="form-control">
-                            @error("onermobile") <small class="text-danger">{{ $message }}</small> @enderror <br>
-
-                         <br>   <input wire:model="oneremail" type="text " placeholder="पसल धनी को ईमेल"  class="form-control">
-                            @error("oneremail") <small class="text-danger">{{ $message }}</small> @enderror <br>
 
                          <button type="submit" class="btn btn-gulabi btn-block">  दर्ता गर्नुस्     </button>
   </form>
@@ -107,6 +110,7 @@
       <th><small><i class="far fa-clock fa-2x"></i></small></th>
     </thead>
     <tbody>
+    @if(session()->has("paasaldartavayo"))
     @forelse($peoductdata as $val)
       <tr>
       <!-- <td>{{$val->id}}</td> -->
@@ -211,6 +215,7 @@
     कृपया पहिला पसल दर्ता गर्नुहोला अनि सामान ऑनलाइन राख्नु होला |<i class="fas fa-frown ml-3 fa-2x"></i> </p>
 
     @endforelse
+    @endif
     </tbody>
 
   </table>

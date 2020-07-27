@@ -78,11 +78,11 @@
     <!-- slidehunewla transparent div end -->
 
 
-    <h5 class="text-center pt-2">Rs.{{$value->pp}}</h5>
+    <h5 class="text-center pt-2">Rs. {{$value->pp}}</h5>
 <!-- --------------------------------------------------------------------------------------------------- -->
 </div>
 @empty
-<h1 class="text-center tcolor"style="position:absolute;top:50%;left:37%;">No data found</h1>
+<h1 class="text-center tcolor"style="position:absolute;left:37%;">No data found</h1>
 @endforelse
 <!-- ..................................................................................... -->
 

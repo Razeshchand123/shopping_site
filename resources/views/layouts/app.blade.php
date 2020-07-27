@@ -55,6 +55,7 @@
                         <li class="nav-item ">
                                 <a class="nav-link " href="/">Shop</a>
                             </li>
+                           
                            <li class="nav-item ">
                                 <a class="nav-link " href="/about">About</a>
                             </li>
@@ -107,10 +108,11 @@
         <main class="py-4">
             @yield('content')
         </main>
+        <hr>
         <div class="d-flex justify-content-around w-100 footer p-1 align-items-center">
             <a href="/about"><small class="pt-2 ">All 	&#169;  2020 Reserved to Digital Bazar</small>
       </a>
-          <small>Developred By <a href="https://www.facebook.com/razesh.chand.1" target="_blank">Rajesh chand</a></small>
+          <small>Developed By <a href="https://www.facebook.com/razesh.chand.1" target="_blank">Rajesh chand</a></small>
         
         </div>
         <br><br>

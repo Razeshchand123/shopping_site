@@ -15,7 +15,7 @@
             <span><a href="/home"><i class="fas fa-arrow-left p-3 tcolor fa-2x"></i></a></span>
             
            
-            @foreach($data as $value)
+            @forelse($data as $value)
             
             <div class="row">
          
@@ -212,7 +212,11 @@
     
            </div>
        </div>
-          @endforeach
+
+       @empty 
+       <h4 class="tcolor text-center">पसल दर्ता गर्न बाकी छ | </h4>
+       
+          @endforelse
        
     
     

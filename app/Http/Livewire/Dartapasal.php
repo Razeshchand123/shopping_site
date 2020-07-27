@@ -34,7 +34,7 @@ public function updated($field){
         "shopaddress"=>"required|max:600|min:20",
         "onername"=>"required|max:50|min:3",
         "onermobile"=>"required|max:10|min:10",
-        "oneremail"=>"required|email|max:20",
+        "oneremail"=>"required|email|max:40",
         "slogo"=>"required|image",
     ],[
         "shopname.required"=>"पसल को नाम लेख्नुस|",
@@ -81,6 +81,16 @@ public function deleteproduct($tid){
 
 
 public function pasal_darta(){
+
+$this->validate([
+    "shopname"=>"required|max:150|min:10",
+    "shopaddress"=>"required|max:600|min:20",
+    "onername"=>"required|max:50|min:3",
+    "onermobile"=>"required|max:10|min:10",
+    "oneremail"=>"required|email|max:40",
+    "slogo"=>"required|image",
+]);
+    
 $imgpath=$this->slogo->store("public/shoplogo");
 
 $std= new pasaldarta;
@@ -94,6 +104,7 @@ $std->oemail=$this->oneremail;
 $result=$std->save();
 if($result){
     session()->flash("done","हजुर को पसल सफलता पुर्वक दर्ता भयो |");
+    session()->put("paasaldartavayo","pasal darata vayo");
 }
 
     }
@@ -107,6 +118,8 @@ if($result){
             $c=$v->omobile;
             $e=$v->saddress;
         }
+       
+        if(session()->has("paasaldartavayo")){
      $std2=new product;
      $peoductdata=$std2->where('psln','=', $a)
                         ->where('pslo','=',$this->onername)  
@@ -115,8 +128,12 @@ if($result){
                          ->where('psla','=',$e)          
                           ->get(); ;
 
-    
+        }
+        else{
+       $peoductdata="nodata";
 
+        }
+        
 // *********************************************************************
     
     $std= new pasaldarta;                                        

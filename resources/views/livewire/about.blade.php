@@ -6,15 +6,19 @@
 
 <div class="col-sm-8 m-auto" style="box-shadow: 1px 2px 14px 4px #540246;
     padding: 2%;">
-<h3 class="text-center"> सर्व प्रथम हजुर लाई  स्वागत छ| </h3>
+
   <p>
  
 <span class="display-4 tcolor">
+<img src=" storage/thispics/logo.png" alt=""  class="border border-dark img-responsive rounded-circle p-2" width="50" height="50">
+ 
 Digital Bazar
 
 
 </span>
-<br> ले हजुर को मौलिक अथवा घरेलु उत्पादन लाई बिस्व बज़ार सामु पुगाउन सहयोग गर्छ|<br>
+<hr>
+<h3> सर्व प्रथम हजुर लाई  स्वागत छ| </h3>
+<br> Digital Bazar ले हजुर को मौलिक अथवा घरेलु उत्पादन लाई बिस्व बज़ार सामु पुगाउन सहयोग गर्छ|<br>
 आज को संसार धेरै नै आधुनीक भइसकेको छ| 
 ठुल-ठूला सहरहरु को साथ साथमा हरेक गाउहरु पनि आधुनिकरण तिर बढी रहेको छन  | <br>
 लगभग
@@ -48,26 +52,162 @@ Digital Bazar
  </ul>
 </div>
 
-</div></div>
-
-
-
-  
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-    {{-- If you look to others for fulfillment, you will never truly be fulfilled. --}}
 </div>
+
+<br>
+<br>
+<!-- 2nd part start  -->
+<div class="row">
+
+<div class="col-sm-8 m-auto" style="box-shadow: 1px 2px 14px 4px #540246;
+    padding: 2%;">
+
+<h3>  हामी लाई सम्पर्क गर्नुस् | </h3>
+<hr>
+
+
+<table class="table">
+<tr>
+<td>Address:</td>
+<td>gali-5,Mahendranager,kanchapur,nepal</td>
+</tr>
+<tr>
+<td>Contect:</td>
+<td>099521511</td>
+</tr>
+<tr>
+<td>Email:</td>
+<td>DigitalBazar@gmail.com</td>
+</tr>
+<tr>
+<td>Social:</td>
+<td>
+<div class=" social animate__animated animate__headShake animate__delay-3s animate__slower animate__infinite" >
+    <a href="" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+     <a href="" target="_blank"><i class="fab fa-instagram-square fa-2x"></i></a>
+    <a href="" target="_blank"><i class="fab fa-google-plus fa-2x"></i></a>
+    <a href="" target="_blank"> <i class="fab fa-youtube fa-2x"></i></a>
+    <a href="" target="_blank"> <i class="fab fa-github fa-2x " aria-hidden="true"></i></a>
+    
+</div>
+</td>
+</tr>
+
+
+<td>Website:</td>
+<td>ditalbazar@gmial.com</td>
+</tr>
+
+</table>
+
+
+
+</div>
+
+</div>
+<!-- 2nd part end  -->
+
+
+<!-- 3rd map part start  -->
+<div class="row mt-5">
+
+<div class="col-sm-8 m-auto" style="box-shadow: 1px 2px 14px 4px #540246;
+    padding: 2%;">
+<h3>  हामी लाई सम्पर्क गर्नुस् | </h3>
+<hr>
+
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1424.9742127794807!2d80.17676488998691!3d28.96229427280963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a1ac07c88b98ad%3A0xc3874da199ecddb1!2sMahendranagar%20Bazaar%2C%20Bhimdatta%2010400!5e1!3m2!1sen!2snp!4v1595843863719!5m2!1sen!2snp" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+</div>
+
+<!-- 3rd map part end here  -->
+
+
+<!-- testomonial part  -->
+<div class="row mt-5">
+
+<div class="col-sm-8 m-auto" style="box-shadow: 1px 2px 14px 4px #540246;
+    padding: 2%;">
+
+  
+
+<h3>  हामी लाई सम्पर्क गर्नुस् | </h3>
+<hr>
+
+<!-- carosul start  -->
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="d-block w-100" >
+      <i >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure quos illo totam nemo tempora illum quod nihil deleniti. Quaerat expedita obcaecati error autem praesentium inventore tempora fugiat accusamus non suscipit!</i>
+      
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="d-block w-100" >
+      <i >Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, recusandae eos. Aspernatur quia neque similique tenetur voluptatem perspiciatis nemo enim autem nobis ipsam quas vel sequi ad cupiditate, animi repellendus.</i>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="d-block w-100" >
+      <i >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis a doloremque quae possimus officiis, soluta alias, cum voluptatibus autem, tempora saepe voluptates earum dolores ratione ea corrupti delectus esse odio!</i>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<!-- carasoul end  -->
+
+
+
+
+
+
+
+
+</div>
+
+</div>
+
+<!-- testmonial part  -->
+
+
+
+
+
+
+
+
+</div>
+<style>
+
+.fab{color:white;
+margin:auto 2%;}
+</style>
+ </div>
