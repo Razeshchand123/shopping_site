@@ -17,6 +17,7 @@ public $c3;
 protected $listeners = ['postAdded'=>"cloth","twocata"=>"twocata","threest"=>"threest"];
 
 
+
 public function cloth($c1){
     $this->c1=$c1;
 }
@@ -76,3 +77,5 @@ public function threest($c1,$c2,$c3){
 
     }
 }
+
+

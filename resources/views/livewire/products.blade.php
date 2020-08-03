@@ -3,14 +3,14 @@
 
 <small>{{$c1}}/{{$c2}}/{{$c3}}</small>
 
- <div class="row mb-4">
+ <div class="row mb-4 "  height="100">
 
 <!-- --------------------------------------------------------------------- -->
 @forelse($data as $value)
-<div class="col-sm-4  parent d-flex flex-column justify-content-center my-4">
+<div class="col-sm-4 parent d-flex flex-column justify-content-center my-4" >
 <!-- ----------------------------------------------------- -->
 @php   $path= trim($value->pi,"public"); @endphp
-       <img src=" http://127.0.0.1:8000/storage{{$path}}" alt="noimg" height="250" class="rounded">
+       <img src=" http://127.0.0.1:8000/storage{{$path}}" alt="noimg" class="rounded pimg" height="250">
 
 
      <!-- slidehunewala transparent div start -->
@@ -25,12 +25,12 @@
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">{{$value->pn}}</h5>
+                                <h5 class="modal-title text-capitalize" id="exampleModalLabel">{{$value->pn}}</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
-                            <div class="modal-body">
+                            <div class="modal-body" style=" background: radial-gradient(#b50697, transparent);">
 
 
                                          <img src="http://127.0.0.1:8000/storage{{$path}}" alt="noimg" height="80">
@@ -38,7 +38,7 @@
 
                 <ul class="modelkoul">
                                 <li>नाम : <span class="details text-capitalize"> {{$value->pn}}</span></li>
-                                <li>मुल्य:Rs <span class="details">Rs{{$value->pp}}</span></li>
+                                <li>मुल्य:Rs <span class="details">Rs. {{$value->pp}}</span></li>
                                 
                                 <li> अरु रंग: <span class="details">
                                 @if($value->r)<span class="rang-red rang"></span>  @endif
