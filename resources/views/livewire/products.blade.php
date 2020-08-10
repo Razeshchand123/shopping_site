@@ -2,15 +2,15 @@
  <div class="container " style="margin-top:-2%;z-index:-1;">
 
 <small>{{$c1}}/{{$c2}}/{{$c3}}</small>
-
+<p class="text-center"><a href="/" class="text-center">All</a></p>
  <div class="row mb-4 "  height="100">
 
 <!-- --------------------------------------------------------------------- -->
 @forelse($data as $value)
-<div class="col-sm-4 parent d-flex flex-column justify-content-center my-4" >
+<div class="col-sm-4 parent d-flex flex-column justify-content-center my-4 " >
 <!-- ----------------------------------------------------- -->
 @php   $path= trim($value->pi,"public"); @endphp
-       <img src=" http://127.0.0.1:8000/storage{{$path}}" alt="noimg" class="rounded pimg" height="250">
+       <img src=" http://127.0.0.1:8000/storage{{$path}}" alt="noimg" class="rounded pimg  img-responsive" height="250" width="250">
 
 
      <!-- slidehunewala transparent div start -->

@@ -129,15 +129,15 @@ $this->validate([
  $std->catagory=$this->catagory;
 // 
 // ->resize(1920, 1080)
- $img1=ImageManagerStatic::make($this->productimg)
-                         ->fit(1920,1080)
-                         ->encode("jpeg");
- $imgpath="/product/".Str::random(10).rand().".jpeg";   
- Storage::disk("public")->put("$imgpath",$img1);                      
+//  $img1=ImageManagerStatic::make($this->productimg)
+//                          ->fit(1920,1080)
+//                          ->encode("jpeg");
+//  $imgpath="/product/".Str::random(10).rand().".jpeg";   
+//  Storage::disk("public")->put("$imgpath",$img1);                      
 
 
 
-//  $imgpath=$this->productimg->store("public/product");
+ $imgpath=$this->productimg->store("public/product");
 
  $std->pn=$this->pname;
  $std->pi=$imgpath;
