@@ -49,26 +49,26 @@ public function threest($c1,$c2,$c3){
         switch ($this->swt) {
             case 1:
                 $std=new product;
-                $data=$std->where("twoth","=",$this->c1)->get();
+                $data=$std->where("twoth","=",$this->c1)->orderBy("id","desc")->get();
                 return view('livewire.products',["data"=>$data]);
                 break;
             case 2:
                  $std=new product;
                  $data=$std->where("twoth","=",$this->c1)
-                            ->where("cata","=",$this->c2)->get();
+                            ->where("cata","=",$this->c2)->orderBy("id","desc")->get();
                 return view('livewire.products',["data"=>$data]);
                 break;
             case 3:
                 $std=new product;
                     $data=$std->where("twoth","=",$this->c1)
                               ->where("cata","=",$this->c2)
-                              ->where("third","=",$this->c3)->get();
+                              ->where("third","=",$this->c3)->orderBy("id","desc")->get();
                     return view('livewire.products',["data"=>$data]);
                 break;
 
                 default:
                 $std=new product;
-                    $data=$std->all();
+                    $data=$std->orderBy("id","desc")->get();
                     return view('livewire.products',["data"=>$data]);
         }
 

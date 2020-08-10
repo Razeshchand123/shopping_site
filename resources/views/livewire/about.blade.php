@@ -66,7 +66,7 @@ Digital Bazar
 <hr>
 
 
-<table class="table">
+<table class="table "style="background:white;">
 <tr>
 <td>Address:</td>
 <td>gali-5,Mahendranager,kanchapur,nepal</td>
@@ -113,7 +113,7 @@ Digital Bazar
 <!-- testomonial part  -->
 <div class="row mt-5">
 
-<div class="col-sm-8 m-auto bgg" style="box-shadow: 1px 2px 14px 4px #540246;
+<div class="col-sm-8 m-auto " style="box-shadow: 1px 2px 14px 4px #540246;
     padding: 2%;">
 
 
@@ -125,7 +125,7 @@ Digital Bazar
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
   </ol>
-  <div class="carousel-inner bgg">
+  <div class="carousel-inner ">
     <div class="carousel-item active">
       <div class="d-block w-100" >
 
