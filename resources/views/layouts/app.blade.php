@@ -31,7 +31,7 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-light  shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     <!-- {{ config('app.name', 'Laravel') }} -->
@@ -53,34 +53,34 @@
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
                         <li class="nav-item ">
-                                <a class="nav-link " href="/">Shop</a>
+                                <a class="nav-link line " href="/">Shop</a>
                             </li>
                            
                            <li class="nav-item ">
-                                <a class="nav-link " href="/about">About</a>
+                                <a class="nav-link line " href="/about">About</a>
                             </li>
                     
                         @guest
                        
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                <a class="nav-link line" href="{{ route('login') }}">{{ __('Login') }}</a>
                             </li>
                             @if (Route::has('register'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                    <a class="nav-link line" href="{{ route('register') }}">{{ __('Register') }}</a>
                                 </li>
                             @endif
                         @else
                   
 
                         <li class="nav-item">
-                                    <a class="nav-link" href="/home">Dashbord</a>
+                                    <a class="nav-link line" href="/home">Dashbord</a>
                                 </li>
 
 
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle text-capitalize" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }} <span class="caret text-warning"></span>
+                                   <span class="line"> {{ Auth::user()->name }}</span> <span class="caret text-warning"></span>
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">

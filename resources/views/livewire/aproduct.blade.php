@@ -21,7 +21,7 @@
          
            <div class="col-md-4 bgg">
          
-          <img src='{{Storage::url($value->slogo)}}' alt="no img" class="img-fliud" height="200"/>
+          <img src='{{Storage::url($value->slogo)}}' alt="no img" class="img-fliud w-100" height="200"/>
             <p class="tcolor text-capitalize">{{$value->sname}}</p>
            <span class="tcolor text-capitalize">{{$value->saddress}}</span>
            <hr>

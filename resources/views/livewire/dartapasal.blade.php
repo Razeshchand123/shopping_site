@@ -15,7 +15,6 @@
 
 
 
-
 <div class="tab ">
   <button class=" btn tablinks btn-gulabi" onclick="openCity(event, 'London')">पसल बारे</button>
   <button class="tablinks btn-gulabi" onclick="openCity(event, 'Paris')">सामान बारे</button>
@@ -89,7 +88,7 @@
   <p class="tcolor">सामान बारे</p>
   <a href="/aproduct"><small>सामान थपनुस</small></a>
     </div>
- 
+
   <table class="table table-hover table-striped table-sm">
     <thead>
       <!-- <th><small>Id</small></th> -->
@@ -111,6 +110,7 @@
     </thead>
     <tbody>
     @if(session()->has("paasaldartavayo"))
+    
     @forelse($peoductdata as $val)
       <tr>
       <!-- <td>{{$val->id}}</td> -->
@@ -211,10 +211,17 @@
 
   </tr>
   @empty
-   <p class="tcolor text-center">हजुर को आहिले सम्म कुनै सामान ऑनलाइन राखिएको छैन |<br>
-    कृपया पहिला पसल दर्ता गर्नुहोला अनि सामान ऑनलाइन राख्नु होला |<i class="fas fa-frown ml-3 fa-2x"></i> </p>
+  
+   <tr>
+   <td colspan="10">
+   <p class="text-center">हजुर को कुनै समान ऑनलाइन रखिएको छैन |<i class="fas fa-frown ml-3 fa-2x pt-3"></i></p>
 
+   </td></tr>
     @endforelse
+   
+
+
+
     @endif
     </tbody>
 

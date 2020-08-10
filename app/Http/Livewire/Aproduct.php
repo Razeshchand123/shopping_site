@@ -6,7 +6,10 @@ use Livewire\Component;
 use Livewire\WithFileUploads;
 use App\pasaldarta;
 use App\product;
+use Image;
+use Intervention\Image\ImageManagerStatic;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
 class Aproduct extends Component
 {
     use WithFileUploads;
@@ -71,7 +74,7 @@ public function updated($field){
     $this->validateOnly($field,[
     "pname"=>"required|min:3|max:25",
       "productimg"=>"required|image",
-      "price"=>'required|numeric|digits_between:1,5',
+      "price"=>'required|numeric|min:1',
       "pdetail"=>"required|max:500|min:150",
     ],[
         "pname.required"=>"समान को नाम लेख्‍न बाकी छ|",
@@ -82,8 +85,8 @@ public function updated($field){
         "productimg.image"=>"तपाई ले दिएको फोटो सपोर्ट गरेन |अर्को फोटो दिनुस|",
 
         "price.required"=>"समान को मुल्य दिनुस |",
-        // "price.min"=>"समान को मुल्य धेरै सानो भयो |",
-        "price.digits_between:1,5"=>"समान को मुल्य धेरै ठुलो भयो |",
+        "price.min"=>"समान को मुल्य धेरै सानो भयो |",
+        "price.max"=>"समान को मुल्य धेरै ठुलो भयो |",
 
         "pdetail.required"=>"समान को  डीटेल खाली  छ |",
         "pdetail.min"=>"समान को  डीटेल 30 सब्द भन्दा सानो भयो |",
@@ -124,8 +127,17 @@ $this->validate([
  $std->twoth=$this->twoth;
  $std->third=$this->third;
  $std->catagory=$this->catagory;
-  
- $imgpath=$this->productimg->store("public/product");
+// 
+// ->resize(1920, 1080)
+ $img1=ImageManagerStatic::make($this->productimg)
+                         ->fit(1920,1080)
+                         ->encode("jpeg");
+ $imgpath="/product/".Str::random(10).rand().".jpeg";   
+ Storage::disk("public")->put("$imgpath",$img1);                      
+
+
+
+//  $imgpath=$this->productimg->store("public/product");
 
  $std->pn=$this->pname;
  $std->pi=$imgpath;

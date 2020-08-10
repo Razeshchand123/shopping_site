@@ -6,10 +6,10 @@ body{
     /* background-color: red;cus
      */
 }
-nav a{
+.line{
   position: relative;
  }
- nav a::after{
+ .line::after{
      content: "";
      position: absolute;
      background-color: white;
@@ -21,13 +21,13 @@ nav a{
     
  }
  
- nav a:hover:after {
+ .line:hover:after {
      width:100%;
      
  
  }
 .nav-link{font-weight: bold;}
-.svgcover{    margin-top: -10%;}
+.svgcover{    margin-top: -12%;}
 
 
 
