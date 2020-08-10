@@ -49,20 +49,20 @@ li{list-style: none;}
 li a{text-decoration: none;}
 .dropdown-menuwala{z-index: 99; position: absolute; width:50px; opacity: 0;visibility: hidden;transition: ease-out .35s;-moz-transition: ease-out .35s;-webkit-transition: ease-out .35s;}
 
-.mainnav li{float: left;padding: 5px;border-left: 1px dotted #f53bd5;}
+.mainnav li{float: left;padding: 5px;}
 .mainnav li:first-child{border: none;}
 .mainnav li a{ display: block;padding: 2%;color:black; text-transform: capitalize;}
 .mainnav li:hover{transition: ease-in .35s;-moz-transition: ease-in .35s;-webkit-transition: ease-in .35s;}
 .mainnav li:hover a{color: maroon;transition: ease-in .35s;-moz-transition: ease-in .35s;-webkit-transition: ease-in .35s;}
 
-.subs {position: relative;top: 0px;width: 175px;border-left: none !important; }
+.subs {position: relative;top: 0px;width: 175px;border-left: none !important; background-color: #fa8be7;}
 .subs:last-child{border: none !important;}
 .hassubs:hover .dropdown-menuwala,.hassubs .hassubs:hover .dropdown-menuwala{opacity: 1;visibility: visible; transition: ease-in .35s;-moz-transition: ease-in .35s;-webkit-transition: ease-in .35s;}
 
 .mainnav li ul li:hover,.mainnav li ul li ul li:hover{transition: ease-in-out .35s;-moz-transition: ease-in-out .35s;-webkit-transition: ease-in-out .35s;}
 .mainnav li ul li:hover a,.mainnav li ul li ul li:hover a{color: maroon;transition: ease-in-out .35s;-moz-transition: ease-in-out .35s;-webkit-transition: ease-in-out .35s;}
 
-.hassubs .hassubs .dropdown-menuwala .subs{left: 25px;position: relative;width:50px;top: 0px;}
+.hassubs .hassubs .dropdown-menuwala .subs{left: 25px;position: relative;top: 0px;}
 .hassubs .hassubs .dropdown-menuwala{position: absolute;width:50px;left: 4px;top: 15px;opacity: 0;visibility: hidden;transition: ease-out .35s;-moz-transition: ease-out .35s;-webkit-transition: ease-out .35s;}
 
   /* dropdown end */
