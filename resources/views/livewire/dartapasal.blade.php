@@ -264,6 +264,13 @@
   <img src=" storage/thispics/samannkoform.png" alt=""  class="w-100 img-responsive rounded-thumbnail ">
 
  </li>
+ <li>
+  <p>
+     समान को फोटो चयन गर्दा background <kbd>सेतो(white)</kbd>  र फोटो <kbd>केन्द्र (center)</kbd>मा भयेको फोटो राम्रो हुन्छ 
+</p>  
+  <img src=" storage/thispics/goodbad.png" alt=""  class="w-100 img-responsive rounded-thumbnail ">
+
+ </li>
   <li><p> तपाईले ऑनलाइन राखेको समान को लिस्ट यसरी देखिन्छ| </p>
   <p> यसै ठाउबाट  Action मा <kbd> <i class="far fa-edit text-warning"></i></kbd> र 
   <kbd> <i class="fas fa-trash-alt text-danger"></i></kbd> ले समान लाई हाटाउन र सामान बारे  जानकारी मा फेरबदल गर्न सक्नु हुछ|</p>

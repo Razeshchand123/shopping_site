@@ -4,8 +4,7 @@
 <div class="container">
 <div class="row">
 
-<div class="col-sm-8 m-auto" style="box-shadow: 1px 2px 14px 4px #540246;
-    padding: 2%;line-height:26px;">
+<div class="col-sm-8 m-auto abt_card" style="line-height:26px;">
 
   <p>
  
@@ -59,8 +58,7 @@ Digital Bazar
 <!-- 2nd part start  -->
 <div class="row">
 
-<div class="col-sm-8 m-auto" style="box-shadow: 1px 2px 14px 4px #540246;
-    padding: 2%;">
+<div class="col-sm-8 m-auto abt_card" >
 
 <h3>  हामी लाई सम्पर्क गर्नुस् | </h3>
 <hr>
@@ -113,8 +111,7 @@ Digital Bazar
 <!-- testomonial part  -->
 <div class="row mt-5">
 
-<div class="col-sm-8 m-auto " style="box-shadow: 1px 2px 14px 4px #540246;
-    padding: 2%;">
+<div class="col-sm-8 m-auto abt_card">
 
 
 
@@ -199,8 +196,7 @@ Digital Bazar
 <!-- 3rd map part start  -->
 <div class="row mt-5">
 
-<div class="col-sm-8 m-auto" style="box-shadow: 1px 2px 14px 4px #540246;
-    padding: 2%;">
+<div class="col-sm-8 m-auto abt_card" >
 <h3>  हामी लाई सम्पर्क गर्नुस् | </h3>
 <hr>
 

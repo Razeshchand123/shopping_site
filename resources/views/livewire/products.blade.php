@@ -1,9 +1,10 @@
 <div>
- <div class="container " style="margin-top:-2%;z-index:-1;">
-
+ <div class="container">
+ 
 <small>{{$c1}}/{{$c2}}/{{$c3}}</small>
-<p class="text-center"><a href="/" class="text-center">All</a></p>
- <div class="row mb-4 "  height="100">
+<br>
+
+ <div class="row mb-4 " height="100">
 
 <!-- --------------------------------------------------------------------- -->
 @forelse($data as $value)

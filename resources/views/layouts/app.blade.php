@@ -38,7 +38,7 @@
                     <!-- {{ config('app.name', 'Laravel') }} -->
                     <img src=" storage/thispics/logo.png" alt=""  class="border border-dark img-responsive rounded-circle" width="50" height="50">
  
-                    <span class="h3">Digital Bazar</span>
+                    <span class="h3 lodotext">Digital Bazar</span>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
