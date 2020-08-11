@@ -21,6 +21,11 @@ class Dartapasal extends Component
   
     public $count;
 
+
+
+
+
+
 public function mount(){
     $this->onername=Auth()->user()->name;
     $this->oneremail=Auth()->user()->email;
@@ -104,46 +109,49 @@ $std->oemail=$this->oneremail;
 $result=$std->save();
 if($result){
     session()->flash("done","हजुर को पसल सफलता पुर्वक दर्ता भयो |");
-    session()->put("paasaldartavayo","pasal darata vayo");
+    
 }
 
     }
 
     public function render()
     {
-        $info= new pasaldarta;
-        $pinfo=$info->all();
-        foreach($pinfo as $v){
-            $a=$v->sname;
-            $c=$v->omobile;
-            $e=$v->saddress;
-        }
-       
-        if(session()->has("paasaldartavayo")){
-     $std2=new product;
-     $peoductdata=$std2->where('psln','=', $a)
-                        ->where('pslo','=',$this->onername)  
-                         ->where('pslno','=',$c)   
-                         ->where('psle','=',$this->oneremail)   
-                         ->where('psla','=',$e)          
-                          ->get(); ;
 
-        }
-        else{
-       $peoductdata="nodata";
+        $std3= new pasaldarta;                                        
+        $shopinfo=$std3->where('oemail','=', $this->oneremail)
+                      ->where('oname','=',$this->onername)            
+                      ->first(); 
+                      
+                      if($shopinfo){
+                     $shopname= $shopinfo->sname ;         
+                     $shopaddress= $shopinfo->saddress ; 
+                     $shopmobile= $shopinfo->omobile ; 
+                }
+                else{
+                    $shopname= "Ranga devi ";         
+                    $shopaddress= "mnr4" ; 
+                    $shopmobile= 0000000000 ; 
+                }
 
-        }
-        
+
+
+        $std2 =new product;
+        $peoductdata=$std2->
+                            where('pslo','=',$this->onername)  
+                            ->where('psle','=',$this->oneremail)   
+                            ->where('psln','=',$shopname) 
+                            ->where('psla','=',$shopaddress)
+                            ->where('pslno','=',$shopmobile)
+                          ->get(); 
+      
 // *********************************************************************
     
-    $std= new pasaldarta;                                        
+      $std= new pasaldarta;                                        
        $shopdata=$std->where('oemail','=', $this->oneremail)
                      ->where('oname','=',$this->onername)            
                      ->get();                   
     
-       
-        
-
         return view('livewire.dartapasal',["data"=>$shopdata,"peoductdata"=>$peoductdata]);
+    
     }
 }

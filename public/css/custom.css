@@ -173,7 +173,7 @@ border:1px solid black;}
 #postimg{
   display:none;
 }
-#labeforsetprofile,table,.bgg{
+#labeforsetprofile,.bgg{
   cursor: pointer;
 
   background:radial-gradient(#b50697, transparent);
@@ -256,7 +256,7 @@ text-align: center;}
 }
 .text-content{
   /* background-color: rgb(0, 0, 0,0.5); */
-  background:#f53bd5;
+  background:radial-gradient(#b50697, transparent);
    
   height:100%;
   width: 100%;

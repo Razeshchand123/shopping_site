@@ -1,5 +1,5 @@
 <div>
-   
+ 
 
 <h3> <span class="text-capitalize tcolor">{{Auth()->user()->name}}</span > Digital Bazar मा स्वागत  छ |  हजुर लाई  <i class="fas fa-praying-hands tcolor ml-2"></i></h3>
  <small class="text-capitalize">तपाई को उत्पादन लाई अन्तर रातरीय बजार मा पुगौने जीमेवारी हाम्रो</small>
@@ -26,7 +26,9 @@
 
 
 @forelse($data as $value)
-<table class="table table-striped table-hover">
+
+
+<table class="table table-striped table-hover  ">
 <tr><td>पसल को नाम</td><td class="tcolor text-capitalize">{{$value->sname}}</td></tr>
 <tr><td>पसल को ठेगाना:</td><td class="tcolor text-capitalize">{{$value->saddress}}</td></tr>
 <tr><td>पसल को बेनर:</td><td class="tcolor text-capitalize">
@@ -89,7 +91,7 @@
   <a href="/aproduct"><small>सामान थपनुस</small></a>
     </div>
 
-  <table class="table table-hover table-striped table-sm">
+  <table class="table table-hover table-striped table-sm table-bordered">
     <thead>
       <!-- <th><small>Id</small></th> -->
       <th><small>नाम </small></th>
@@ -109,25 +111,27 @@
       <th><small><i class="far fa-clock fa-2x"></i></small></th>
     </thead>
     <tbody>
-    @if(session()->has("paasaldartavayo"))
-    
+ 
+  
     @forelse($peoductdata as $val)
-      <tr>
+    <tr>
       <!-- <td>{{$val->id}}</td> -->
       <td>{{$val->pn}}</td>
       <!-- <td>123</td> -->
 
 
 
-     <td>@if(storage::url($val->pi))
-     <img src="{{storage::url($val->pi)}}" alt="noimg" height="80">
+     <td>
+    @if(storage::url($val->pi))
+     <img src="{{storage::url($val->pi)}}" alt="noimg" height="50" width="50">
      @endif
+
      </td>
 
 
 
-     
-      <td>{{$val->pd}}</td>
+ 
+      <td>{{substr($val->pd,0,50)}}</td>
       <td>Rs.{{$val->pp}}</td>
       <td>
         @if($val->r)<span class="rang-red rang"></span>  @endif
@@ -193,24 +197,12 @@
 <!-- modelcodeend -->
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 </td>
 <td>{{$val->created_at->diffForHumans()}}</td>
 
   </tr>
-  @empty
+  
+    @empty
   
    <tr>
    <td colspan="10">
@@ -222,7 +214,6 @@
 
 
 
-    @endif
     </tbody>
 
   </table>
