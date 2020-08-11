@@ -228,9 +228,9 @@
 
 <ul class="prakriya">
 <li>
-<p>कुनै पनि जानकारी सही मात्र लेख्नुहोला नत्र जानकारी अनुसारको समान नभये ग्राहक ले समान फिर्ता गर्न सक्छ |</p>
-   <p>आफूले दर्ता गरेको नाम र पासवर्ड ईमेल हरु गोप्य राख्नु होला|</p>
-  <p>ग्राहक ले हजुर को सामान किन्दा हजुर ले दिएको मोबाइल नंबर ईमेल वा हजुर को ठेगाना मा सम्पर्क गर्ने हुनाले सही जानकारी दिनुहोला|</p>
+<p>कुनै पनि जानकारी सही मात्र लेख्नुहोला नत्र जानकारी अनुसारको समान नभये ग्राहक ले समान फिर्ता गर्न सक्छ |<br>
+   आफूले दर्ता गरेको नाम र पासवर्ड ईमेल हरु गोप्य राख्नु होला|<br>
+  ग्राहक ले हजुर को सामान किन्दा हजुर ले दिएको मोबाइल नंबर ईमेल वा हजुर को ठेगाना मा सम्पर्क गर्ने हुनाले सही जानकारी दिनुहोला|</p>
  
   <img src=" storage/thispics/error.jpg" alt=""  class="w-100 img-responsive rounded-thumbnail ">
    
@@ -239,7 +239,7 @@
 
 
   <li>
-  <p>पसल बारे मा क्लिक गरेर
+  <p><kbd>पसल बारे</kbd> मा क्लिक गरेर
      पसल दर्ता गर्नुस् 
  </p>
   <img src=" storage/thispics/pasal_darata.png" alt=""  class="w-100 img-responsive rounded-thumbnail ">
@@ -254,18 +254,19 @@
  </li>
  
   <li >
-  <p> समान बारे मा क्लिक गर्नुस् अनि समान थप्नुस म क्लिक गर्नुस् | </p>
+  <p> <kbd>समान बारे</kbd> मा क्लिक गर्नुस् अनि <kbd>समान थप्नुस</kbd> म क्लिक गर्नुस् | </p>
   <img src=" storage/thispics/addproductclickbtn.png" alt=""  class="w-100 img-responsive rounded-thumbnail ">
 
  </li>
 
   <li>
-  <p> समान बारे जानकारी दिनुस र समान लाई ऑनलाइन राख्नुस</p>  
+  <p> समान बारे जानकारी दिनुस र <kbd> समान दर्ता गर्नुस्</kbd> अनि समान लाई ऑनलाइन राख्नुस</p>  
   <img src=" storage/thispics/samannkoform.png" alt=""  class="w-100 img-responsive rounded-thumbnail ">
 
  </li>
   <li><p> तपाईले ऑनलाइन राखेको समान को लिस्ट यसरी देखिन्छ| </p>
-  <p> यसै ठाउबाट  Action मा  गई  समान लाई हाटाउन र सामान बारे  जानकारी मा फेरबदल गर्न सक्नु हुछ|</p>
+  <p> यसै ठाउबाट  Action मा <kbd> <i class="far fa-edit text-warning"></i></kbd> र 
+  <kbd> <i class="fas fa-trash-alt text-danger"></i></kbd> ले समान लाई हाटाउन र सामान बारे  जानकारी मा फेरबदल गर्न सक्नु हुछ|</p>
     <img src=" storage/thispics/product ko table.png" alt=""  class="w-100 img-responsive rounded-thumbnail ">
 
   

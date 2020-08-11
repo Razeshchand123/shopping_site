@@ -25,15 +25,20 @@
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title text-capitalize" id="exampleModalLabel">{{$value->pn}}</h5>
+                                <h5 class="modal-title text-capitalize" id="exampleModalLabel">
+                                <img src=" storage/thispics/logo.png" alt=""  class="border border-dark img-responsive rounded-circle" width="50" height="50">
+ 
+                    <span class="h3">Digital Bazar</span>
+                
+                                </h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
-                            <div class="modal-body" style=" background: radial-gradient(#b50697, transparent);">
+                            <div class="modal-body">
 
 
-                                         <img src="http://127.0.0.1:8000/storage{{$path}}" alt="noimg" height="80">
+                                         <img src="http://127.0.0.1:8000/storage{{$path}}" alt="noimg" height="80" style="margin-left:8%;">
 
 
                 <ul class="modelkoul">
@@ -66,8 +71,8 @@
                  </ul>
                             </div>
                                     <div class="modal-footer d-flex justify-content-between">
-                                    <a href="/" class="btn btn-outline-danger" data-dismiss="modal">मन परेन<i class="fas fa-times text-danger"></i></a>
-                                    <a href="/one/{{$value->id}}"  class="btn  btn-gulabi">किन्नस<i class="fas fa-check"></i></a>
+                                    <a href="/" class="btn btn-outline-danger" data-dismiss="modal"><small>मन परेन</small><i class="fas fa-times text-danger"></i></a>
+                                    <a href="/one/{{$value->id}}"  class="btn  btn-gulabi"><small>थप जानकारी</small><i class="fas fa-check"></i></a>
                                      </div>
                             </div>
                         </div>

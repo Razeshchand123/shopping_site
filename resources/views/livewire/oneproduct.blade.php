@@ -38,11 +38,11 @@
 </div>
           <!-- slider -->
         </div>
-        <div class="col-lg-6 one_prd_text p-3">
+        <div class="col-lg-6 bg-light p-3">
       
         <ul class="modelkoul">
-     <li>नाम : <span class="details"> {{$value->pn}}</span></li>
-     <li>मुल्य:Rs <span class="details">Rs.{{$value->pp}}</span></li>
+     <li>नाम : <span class="details"> {{$value->pn}}</span></li><br>
+     <li>मुल्य:Rs <span class="details">Rs.{{$value->pp}}</span></li><br>
      <li> अरु रंग: <span class="details">
        
                             @if($value->r)<span class="rang-red rang"></span>  @endif
@@ -54,20 +54,22 @@
                                 </span>
                               
      
-      </li>
+      </li><br>
       <li>साईज हरु:<span class="details"> 
                                         @if($value->m)<span class="sizescontrol">M</span>  @endif
                                         @if($value->l)<span class="sizescontrol">L</span>  @endif
                                         @if($value->xl)<span class="sizescontrol">XL</span>  @endif
                                         @if($value->xxl)<span class="sizescontrol">XXL</span>  @endif
                                         @if($value->k)<span class="sizescontrol">K</span>  @endif</span>
-                                        </li>
-     <li>थप जानकारी: <span class="details"> {{$value->pd}} <hr>
-     <li>पसल को नाम: <span class="details">{{$value->psln}}</span></li>
-     <li>पसल धनी: <span class="details">{{$value->pslo}}</span></li>
-     <li>मोबाइल: <span class="details">{{$value->pslno}}</span></li>
-     <li>ईमेल: <span class="details">{{$value->psle}}</span></li>
-     <li>पसल को ठेगाना: <span class="details">{{$value->psla}}</span></li>
+                                        </li><br>
+
+     <li>थप जानकारी:<br> <span class="text-dark font-weight-light"> {{$value->pd}} </span></li><hr>
+
+     <li>पसल को नाम: <span class="details">{{$value->psln}}</span></li><br>
+     <li>पसल धनी: <span class="details">{{$value->pslo}}</span></li><br>
+     <li>मोबाइल: <span class="details">{{$value->pslno}}</span></li><br>
+     <li>ईमेल: <span class="details">{{$value->psle}}</span></li><br>
+     <li>पसल को ठेगाना: <span class="details">{{$value->psla}}</span></li><br>
     </ul>
 
 

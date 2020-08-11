@@ -33,7 +33,7 @@ body{
 
 
 
-nav,.one_prd_text{
+nav{
     background: #f53bd5;
     /* background-color:  #fd1bd7 ; */
     margin: 0;
@@ -62,7 +62,7 @@ li a{text-decoration: none;}
 .mainnav li ul li:hover,.mainnav li ul li ul li:hover{transition: ease-in-out .35s;-moz-transition: ease-in-out .35s;-webkit-transition: ease-in-out .35s;}
 .mainnav li ul li:hover a,.mainnav li ul li ul li:hover a{color: maroon;transition: ease-in-out .35s;-moz-transition: ease-in-out .35s;-webkit-transition: ease-in-out .35s;}
 
-.hassubs .hassubs .dropdown-menuwala .subs{left: 25px;position: relative;top: 0px;}
+.hassubs .hassubs .dropdown-menuwala .subs{left: 25px;position: relative;top: 0px; background: rgb(248, 4, 126);}
 .hassubs .hassubs .dropdown-menuwala{position: absolute;width:50px;left: 4px;top: 15px;opacity: 0;visibility: hidden;transition: ease-out .35s;-moz-transition: ease-out .35s;-webkit-transition: ease-out .35s;}
 
   /* dropdown end */
@@ -276,6 +276,30 @@ align-items: center;
   bottom: 0%;
   
 }
+.addproduct_shop_part{
+  display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+}
+
+
+@media screen and (min-width:758px){
+
+  .addproduct_shop_part{
+    display: block;
+width: 100%;
+     
+   
+}
+.addproduct_shop_part>img{width:100%;}
+}
+
+kbd{
+  background-color: #a3a307;
+}
+
 
 /* 770px */
 @media screen and (max-width:770px){

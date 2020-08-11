@@ -5,7 +5,7 @@
 <div class="row">
 
 <div class="col-sm-8 m-auto" style="box-shadow: 1px 2px 14px 4px #540246;
-    padding: 2%;">
+    padding: 2%;line-height:26px;">
 
   <p>
  
@@ -227,7 +227,8 @@ Digital Bazar
 </div>
 <style>
 
-.fab{color:white;
+.fab{
+  color:#551a8b;
 margin:auto 2%;}
 </style>
  </div>
