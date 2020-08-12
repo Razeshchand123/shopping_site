@@ -52,7 +52,8 @@ public $temp;
 public function mount(){
     //  shopdata section
 $std= new pasaldarta;
-$shopdata=$std->all();
+$shopdata=$std->where("oname","=",Auth()->User()->name)->where("oemail","=",Auth()->User()->email)
+->where("oemail","=",Auth()->User()->email)->get();
 
 foreach($shopdata as $value){
     $this->paslname=$value->sname;
@@ -74,7 +75,7 @@ public function updated($field){
     $this->validateOnly($field,[
     "pname"=>"required|min:3|max:25",
       "productimg"=>"required|image",
-      "price"=>'required|numeric|min:1',
+      "price"=>'required|numeric|min:2',
       "pdetail"=>"required|max:500|min:150",
     ],[
         "pname.required"=>"समान को नाम लेख्‍न बाकी छ|",
@@ -103,7 +104,7 @@ public function addproduct(){
 $this->validate([
     "pname"=>"required|min:3|max:25",
     "productimg"=>"required|image",
-    "price"=>"required|max:5|min:1",
+    "price"=>"required|min:1",
     "pdetail"=>"required|max:500|min:150",
   
   ]);

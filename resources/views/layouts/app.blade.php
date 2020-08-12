@@ -31,7 +31,10 @@
 </head>
 <body>
 
-    <div id="app">
+
+
+
+  <div id="app">
         <nav class="navbar navbar-expand-md navbar-light  shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
@@ -119,8 +122,8 @@
         <br><br>
          </div>
 
-
-
-
+ 
     </body>
-</html>
+
+
+    </html>

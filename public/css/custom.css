@@ -1,5 +1,5 @@
 *{
-
+text-transform: capitalize;
 }
 :root {
   --main-bg-color: #0545c1cf;
@@ -9,9 +9,31 @@
 .lodotext{color:white;}
 
 body{
+/* background-color: red; */
      background-color: white;
      justify-content: center;
 }
+
+#app{
+  /* background-color: yellow; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .line{
   position: relative;
  }
@@ -60,7 +82,7 @@ li a{text-decoration: none;}
 .mainnav li:hover{transition: ease-in .35s;-moz-transition: ease-in .35s;-webkit-transition: ease-in .35s;}
 .mainnav li:hover a{color: maroon;transition: ease-in .35s;-moz-transition: ease-in .35s;-webkit-transition: ease-in .35s;}
 
-.subs {position: relative;top: 0px;width: 175px;border-left: none !important; background-color: #fa8be7;}
+.subs{position: relative;top: 0px;width: 175px;border-left: none !important; background-color: #fa8be7;}
 .subs:last-child{border: none !important;}
 .hassubs:hover .dropdown-menuwala,.hassubs .hassubs:hover .dropdown-menuwala{opacity: 1;visibility: visible; transition: ease-in .35s;-moz-transition: ease-in .35s;-webkit-transition: ease-in .35s;}
 
@@ -133,6 +155,7 @@ transform: scale(1.3);
   margin-left:2%;
   color:black;
   font-weight: normal;
+  text-transform: capitalize;
 }
 .modelkoul>li{
   color:var(--main-bg-color) ;

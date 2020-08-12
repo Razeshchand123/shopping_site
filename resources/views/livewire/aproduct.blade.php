@@ -39,7 +39,7 @@
                     @error("pname") <small class="text-danger">{{$message}}</small> @enderror<br>
                       
 
-                    <input type="number" placeholder="समान को मुल्य" class="form-control" wire:model="price"> 
+                    <input type="text" placeholder="समान को मुल्य" class="form-control" wire:model="price"> 
                     @error("price") <small class="text-danger">{{$message}}</small> @enderror<br>
     
                      
@@ -48,7 +48,7 @@
                       @error("pdetail") <small class="text-danger">{{$message}}</small> @enderror
                       <hr>
 
-                 
+                 <a href="https://www.remove.bg/upload" target="_balnk"><p>तपाई को समान को background <kbd class="bg-info">सेतो(white)</kbd> पर्नुस |</p></a>
                          <label for="setprofile" id="labeforsetprofile" class="mt-2">
                          @if ($productimg )
                          <img src="{{ $productimg->temporaryUrl() }}" height="100">
