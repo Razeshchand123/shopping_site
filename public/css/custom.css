@@ -59,6 +59,7 @@ body{
 
 .navbar-light .navbar-nav .nav-link {
   color: white; 
+  transition: all 1s ease-in-out;
 }
 
 nav{

@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Storage;
 use App\product;
 class Products extends Component
 {
-
+public $search;
 public $std1=3;
 public $label;
 public $swt;
@@ -41,7 +41,9 @@ public function threest($c1,$c2,$c3){
 
 }
 
-
+public function ssearch(){
+    $this->swt="search";
+}
 
     public function render()
     { 
@@ -74,8 +76,12 @@ public function threest($c1,$c2,$c3){
                 break;
 
                 default:
-                    $std=new product;
-                    $data=$std->orderBy("id","desc")->get();
+                
+        $data =product::where('pn', $this->search)
+            ->orWhere('pn', 'like', '%' . $this->search . '%')->orderBy("id","desc")->get();
+    
+                   // $std=new product;
+                    // $data=$std->orderBy("id","desc")->get();
                     return view('livewire.products',["data"=>$data]);
         }
 

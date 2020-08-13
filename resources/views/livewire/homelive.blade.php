@@ -1,11 +1,11 @@
-<div>
+<div >
     
 
    
 
 <!-- <button wire:click="$emitTo('counter', 'postAdded')"> -->
 
-<div class="nav navcover">
+<div class="nav navcover d-flex justify-content-around">
 <!-- otercose -->
 <div class="main">
             <ul class="mainnav">
@@ -208,17 +208,20 @@
                 </li>
                 
                 <li><a href="/" class="btn text-danger">ALL</a></li>
+                
 
             </ul>
             
             <br style="clear: both;">
+
         </div>
  
+
+
+
 <!-- ouercode -->
 </div>
-     
-
-<livewire:products/>
-
+   
+  <livewire:products/>
 
 </div>

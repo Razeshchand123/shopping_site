@@ -1,8 +1,20 @@
 <div>
  <div class="container">
- 
-<small>{{$c1}}/{{$c2}}/{{$c3}}</small>
-<br>
+
+
+
+ <!-- <small>{{$c1}}/{{$c2}}/{{$c3}}</small> -->
+<!-- searchbox code here  -->
+<div class="input-group w-75 mx-auto" >
+  <input wire:model="search" type="text" class="form-control" placeholder="Search here !" aria-label="Username" aria-describedby="basic-addon1">
+  <div class="input-group-prepend">
+    <span class="input-group-text bg-white" id="basic-addon1">
+    <button wire:click="seearchfuction" class="btn btn-sm p-0"><i class="fas fa-search text-info"></i></button></span>
+  </div>
+</div>
+
+<!-- searchbox code here  -->
+
  <div class="row mb-4 " height="100">
 
 <!-- --------------------------------------------------------------------- -->
