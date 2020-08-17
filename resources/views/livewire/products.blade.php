@@ -33,8 +33,8 @@
                             Buy now
                             </button>
 
-                        <div style="width:58%;" class=" ml-auto modal fade" id="exampleModal{{$value->id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
+                        <div  class="w-uto ml-auto modal fade" id="exampleModal{{$value->id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
                             <div class="modal-content">
                             <div class="modal-header">
                                 <h5 class="modal-title text-capitalize" id="exampleModalLabel">
@@ -53,7 +53,7 @@
                                          <img src="http://127.0.0.1:8000/storage{{$path}}" alt="noimg" height="80" style="margin-left:8%;">
 
 
-                <ul class="modelkoul">
+                        <ul class="modelkoul">
                                 <li>नाम : <span class="details text-capitalize"> {{$value->pn}}</span></li>
                                 <li>मुल्य:Rs <span class="details">Rs. {{$value->pp}}</span></li>
                                 

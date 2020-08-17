@@ -14,3 +14,7 @@ Route::livewire("/","homelive");
 Route::livewire("aproduct","aproduct");
 Route::livewire("/one/{id?}","oneproduct");
 Route::livewire("/about","about");
+
+Route::livewire("/note","note");
+
+Route::livewire("/graph","graph");

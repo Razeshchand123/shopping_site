@@ -1,26 +1,16 @@
+<div>
+
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, fugit itaque ad aperiam reprehenderit natus nihil porro dolorum eaque perferendis ipsa libero magnam error. Fuga quidem quibusdam quasi aspernatur nesciunt.</p>
+<hr><hr>
+
+
+<style>
+
+
+</style>
 
 
 
 
-
-
-
-                  where('psln','=', $a)
-                  ->where('psle','=',$this->oneremail)   
-                        ->where('pslo','=',$this->onername)  
-                        
-                         ->where('pslno','=',$c)   
-                         
-                         ->where('psla','=',$adrs)          
-                          ->get(); 
-
-
-                          $search_data = DB::table('users')->where('CustomerName' LIKE 'this->search%');
-
-                          SELECT * FROM Customers
-                           WHERE CustomerName LIKE 'a%';
-
-hello developers 
-how can use like sql query in laravel 
-i tried this is this right?
-$search_data = DB::table('users')->where('CustomerName' LIKE 'this->search%');
+</div>

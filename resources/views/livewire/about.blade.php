@@ -37,6 +37,7 @@ Digital Bazar
 
  <li><i class="fas fa-arrow-circle-right tcolor pr-2"></i> तपाईले सर्वप्रथम आफ्नो सही जानकारी आनुसार यो वेबसाइट मा दर्ता गर्नु पर्नेछ| 
 </li><br>
+<li><i class="fas fa-arrow-circle-right tcolor pr-2"></i>नाम दर्ता गर्दा दिएयेको ईमेल मा एउटा  verification लिंक आउछ त्यसमा क्लिक गरेर ईमेल वेरिफिकेशन  गर्नुस् | </li><br>
 <li><i class="fas fa-arrow-circle-right tcolor pr-2"></i> तापाईले आफ्नो नाम दर्ता गरी सकेपछि तपाईले पसल दर्ता गर्न  
 सक्नुहुन्छ  र पसल को सही जानकारी दिएर पसल पनि दर्ता गर्नुस् |</li><br>
 <li><i class="fas fa-arrow-circle-right tcolor pr-2"></i>  पसल छैन भने  पनि नाम सँग सुहाउदो पसल कल्पना गरेर दर्ता गर्न सकिनछ| Eg. <small>Ashokstore</small></li><br>
@@ -105,8 +106,21 @@ Digital Bazar
 </div>
 <!-- 2nd part end  -->
 
+<!-- graph paart start  -->
+<div class="row mt-5">
+<div class="col-sm-8 m-auto abt_card" >
+
+<livewire:graph/>
 
 
+
+
+
+</div>
+</div>
+
+
+<!-- graph part end  -->
 
 <!-- testomonial part  -->
 <div class="row mt-5">

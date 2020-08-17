@@ -1,6 +1,10 @@
 *{
 text-transform: capitalize;
 }
+::selection{
+  color:red;
+  background: yellow;
+}
 :root {
   --main-bg-color: #0545c1cf;
   --btn-bg-color: #0545c1cf;
@@ -9,28 +13,11 @@ text-transform: capitalize;
 .lodotext{color:white;}
 
 body{
+  /* background: radial-gradient(blue, transparent); */
 /* background-color: red; */
      background-color: white;
      justify-content: center;
 }
-
-#app{
-  /* background-color: yellow; */
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -325,7 +312,7 @@ width: 100%;
 kbd{
   background-color: #a3a307;
 }
-
+/* .graphcover{background: radial-gradient(#7e7efa, transparent);} */
 
 /* 770px */
 @media screen and (max-width:770px){
@@ -350,6 +337,7 @@ kbd{
 /* ========================== */
 @media screen and (max-width:576px){
   .model {width:58% !important;}
+  .modal-content {width:60%;}
  
  }
  /* ================================================== */
