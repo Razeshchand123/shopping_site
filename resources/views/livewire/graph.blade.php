@@ -71,9 +71,8 @@ var ctx = document.getElementById('myChart2').getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'line',
     data: {
-        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+        labels: ['बैसाक', 'जेठ', 'आसार', 'साउन ', 'भाद्र ', 'आसोज', 'कार्तिक', 'मंसिर', 'पुष', 'माग', 'फागुन', 'चैत्र'],
         datasets: [{
-           
 			borderColor: 'red',
             label: 'shops',
             data: [

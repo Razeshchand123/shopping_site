@@ -70,6 +70,9 @@
      <li>मोबाइल: <span class="details">{{$value->pslno}}</span></li><br>
      <li>ईमेल: <span class="details">{{$value->psle}}</span></li><br>
      <li>पसल को ठेगाना: <span class="details">{{$value->psla}}</span></li><br>
+
+
+     <li>भुक्तानी गर्नुस् : <a href="#"> <img class="ml-2" src="http://127.0.0.1:8000/storage/thispics/card1.png" alt="" height="50"></a> </li>
     </ul>
 
 

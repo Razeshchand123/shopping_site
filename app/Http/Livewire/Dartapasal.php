@@ -35,7 +35,7 @@ public function mount(){
 
 public function updated($field){
     $this->validateOnly($field,[
-        "shopname"=>"required|max:150|min:10",
+        "shopname"=>"required|max:70|min:10",
         "shopaddress"=>"required|max:600|min:20",
         "onername"=>"required|max:50|min:3",
         "onermobile"=>"required|max:10|min:10",
@@ -88,7 +88,7 @@ public function deleteproduct($tid){
 public function pasal_darta(){
 
 $this->validate([
-    "shopname"=>"required|max:150|min:10",
+    "shopname"=>"required|max:70|min:10",
     "shopaddress"=>"required|max:600|min:20",
     "onername"=>"required|max:50|min:3",
     "onermobile"=>"required|max:10|min:10",
