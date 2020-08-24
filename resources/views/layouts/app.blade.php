@@ -20,6 +20,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     @livewireStyles
 
   <!-- Scripts -->
@@ -124,6 +125,14 @@
 
  
     </body>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        offset: 70,
+        delay:0,
+        duration:600,
+        easing: 'ease-in-out',
+    });
+  </script>
 
     </html>

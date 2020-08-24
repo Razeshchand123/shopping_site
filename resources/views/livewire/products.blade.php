@@ -15,7 +15,7 @@
 
 <!-- searchbox code here  -->
 
- <div class="row mb-4 " height="100">
+ <div class="row mb-4 " height="100" >
 
 <!-- --------------------------------------------------------------------- -->
 @forelse($data as $value)

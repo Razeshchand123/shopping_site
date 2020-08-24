@@ -78,16 +78,31 @@ public function deleteproduct($tid){
     $path=$d_target->pi;
 
     $path=explode("##",$path);
-
+  $len=count($path);
+ if($len==2){
+    $path1="public".trim($path[1],"public"); 
+    Storage::delete($path1);
+ }
+ if($len==3){
+    $path1="public".trim($path[1],"public"); 
+    $path2="public".trim($path[2],"public"); 
+    Storage::delete($path1);
+    Storage::delete($path2);
+ }
+ if($len==4){
     $path1="public".trim($path[1],"public"); 
     $path2="public".trim($path[2],"public"); 
     $path3="public".trim($path[3],"public"); 
-  
-
 
     Storage::delete($path1);
     Storage::delete($path2);
     Storage::delete($path3);
+ }
+
+
+
+
+   
 
 
 

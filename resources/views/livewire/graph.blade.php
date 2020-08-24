@@ -29,12 +29,12 @@ $desc;
 $totalshop=$jan+$fab+$march+$april+$may+$june+$july+$agust+$sept+$oct+$nov+$desc;
 @endphp
 
-<div class="graphcover">
+<div class="graphcover" data-aos='flip-down'>
 <h5 class="text-center p-2">हामी सँग राखिएका समानहरु <i class="fas fa-long-arrow-alt-right"></i> {{$totalproduct}} </h5>
 <canvas id="myChart"  height="130" ></canvas>
 </div>
 <br><hr><br>
-<div class="graphcover">
+<div class="graphcover" data-aos='flip-down'>
 <h5 class="text-center p-2">हामी सँग जोडिएका पसलहरु <i class="fas fa-long-arrow-alt-right"></i> {{$totalshop}}</h5>
 <canvas id="myChart2"  height="130" ></canvas>
 </div>

@@ -35,28 +35,28 @@ Digital Bazar
  <ul>
  
 
- <li><i class="fas fa-arrow-circle-right tcolor pr-2"></i> तपाईले सर्वप्रथम आफ्नो सही जानकारी आनुसार यो वेबसाइट मा नाम दर्ता गर्नु पर्नेछ| 
+ <li data-aos='flip-down'><i class="fas fa-arrow-circle-right tcolor pr-2"></i> तपाईले सर्वप्रथम आफ्नो सही जानकारी आनुसार यो वेबसाइट मा नाम दर्ता गर्नु पर्नेछ| 
 </li><br>
-<li><i class="fas fa-arrow-circle-right tcolor pr-2"></i>नाम दर्ता गर्दा दिएयेको ईमेल मा एउटा  verification लिंक आउछ त्यसमा क्लिक गरेर ईमेल वेरिफिकेशन  गर्नुस् | </li><br>
-<li><i class="fas fa-arrow-circle-right tcolor pr-2"></i> तापाईले आफ्नो नाम दर्ता गरी सकेपछि तपाईले पसल दर्ता गर्न  
+<li data-aos='flip-down'><i class="fas fa-arrow-circle-right tcolor pr-2"></i>नाम दर्ता गर्दा दिएयेको ईमेल मा एउटा  verification लिंक आउछ त्यसमा क्लिक गरेर ईमेल वेरिफिकेशन  गर्नुस् | </li><br>
+<li data-aos='flip-down'><i class="fas fa-arrow-circle-right tcolor pr-2"></i> तापाईले आफ्नो नाम दर्ता गरी सकेपछि तपाईले पसल दर्ता गर्न  
 सक्नुहुन्छ  र पसल को सही जानकारी दिएर पसल पनि दर्ता गर्नुस् |</li><br>
-<li><i class="fas fa-arrow-circle-right tcolor pr-2"></i>  पसल छैन भने  पनि नाम सँग सुहाउदो पसल कल्पना गरेर दर्ता गर्न सकिनछ| Eg. <small>Ashokstore</small></li><br>
-<li><i class="fas fa-arrow-circle-right tcolor pr-2"></i> पसल दर्ता गर्दा पसल को एउटा सुहाउदो बेनर वा लोगो राख्नुस |</li><br>
- <li><i class="fas fa-arrow-circle-right tcolor pr-2"></i> तपाईले दिएको नाम पसलको नाम ठेगाना तथा अरु जानकारी हरु सही हुनु पर्नेछ | किनकि भोलिका दिनमा हजुरको समानहरु मा अरुले दाबी गर्न नसकोस 
+<li data-aos='flip-down'><i class="fas fa-arrow-circle-right tcolor pr-2"></i>  पसल छैन भने  पनि नाम सँग सुहाउदो पसल कल्पना गरेर दर्ता गर्न सकिनछ| Eg. <small>Ashokstore</small></li><br>
+<li data-aos='flip-down'><i class="fas fa-arrow-circle-right tcolor pr-2"></i> पसल दर्ता गर्दा पसल को एउटा सुहाउदो बेनर वा लोगो राख्नुस |</li><br>
+ <li data-aos='flip-down'><i class="fas fa-arrow-circle-right tcolor pr-2"></i> तपाईले दिएको नाम पसलको नाम ठेगाना तथा अरु जानकारी हरु सही हुनु पर्नेछ | किनकि भोलिका दिनमा हजुरको समानहरु मा अरुले दाबी गर्न नसकोस 
  </li><br>
-<li><i class="fas fa-arrow-circle-right tcolor pr-2"></i> सही जानकारी आनुसार पसल दर्ता गरी सके पछी
+<li data-aos='flip-down'><i class="fas fa-arrow-circle-right tcolor pr-2"></i> सही जानकारी आनुसार पसल दर्ता गरी सके पछी
 अब तपाईले को नाम ले समान हरु वेबसाइट 
 राख्न  सक्नुहुन्छ |</li><br>
-<li><i class="fas fa-arrow-circle-right tcolor pr-2"></i>समान को फोटो राख्दा background सेतो भयेको फोटो भये राम्रो हुन्छ |
+<li data-aos='flip-down'><i class="fas fa-arrow-circle-right tcolor pr-2"></i>समान को फोटो राख्दा background सेतो भयेको फोटो भये राम्रो हुन्छ |
 हामीले दीइएको लिंक बाट वा अरु  मोबाइल अप्लिकेशन बाट background सेतो बनाउन सकिन्छ | </li><br>
 
 <hr>
-<li class="text-center"> हाम्रो तर्फ बाट लिन सकिने सहयोग |</li><br>
-<li><i class="fas fa-arrow-circle-right tcolor pr-2"></i> हजुर को पसल वा बप्यार को लागि लोगो डिज़ाइन |</li><br>
-<li><i class="fas fa-arrow-circle-right tcolor pr-2"></i> 24 घण्टा ऑनलाइन सपोर्ट  |</li><br>
-<li><i class="fas fa-arrow-circle-right tcolor pr-2"></i> ग्राहक सम्म समान डिलिवेरी को बवस्ता  |</li><br>
-<li><i class="fas fa-arrow-circle-right tcolor pr-2"></i> अन्तरराट्रीय कुरियर मापदण्ड अनुसार समान को पेकेजिंग</li><br>
-<li><i class="fas fa-arrow-circle-right tcolor pr-2"></i> बजार मुखी र रोजगार मुखी तालिम हरु | </li><br>
+<li  data-aos='flip-down' class="text-center"> हाम्रो तर्फ बाट लिन सकिने सहयोग |</li><br>
+<li data-aos='flip-down' ><i class="fas fa-arrow-circle-right tcolor pr-2"></i> हजुर को पसल वा बप्यार को लागि लोगो डिज़ाइन |</li><br>
+<li data-aos='flip-down'><i class="fas fa-arrow-circle-right tcolor pr-2"></i> 24 घण्टा ऑनलाइन सपोर्ट  |</li><br>
+<li data-aos='flip-down'><i class="fas fa-arrow-circle-right tcolor pr-2"></i> ग्राहक सम्म समान डिलिवेरी को बवस्ता  |</li><br>
+<li data-aos='flip-down'><i class="fas fa-arrow-circle-right tcolor pr-2"></i> अन्तरराट्रीय कुरियर मापदण्ड अनुसार समान को पेकेजिंग</li><br>
+<li data-aos='flip-down'><i class="fas fa-arrow-circle-right tcolor pr-2"></i> बजार मुखी र रोजगार मुखी तालिम हरु | </li><br>
 
  </ul>
 </div>
@@ -68,7 +68,7 @@ Digital Bazar
 <!-- 2nd part start  -->
 <div class="row">
 
-<div class="col-sm-8 m-auto abt_card" >
+<div class="col-sm-8 m-auto abt_card" data-aos='flip-down'>
 
 <h3>  हामी लाई सम्पर्क गर्नुस् | </h3>
 <hr>
@@ -134,7 +134,7 @@ Digital Bazar
 <!-- testomonial part  -->
 <div class="row mt-5">
 
-<div class="col-sm-8 m-auto abt_card">
+<div class="col-sm-8 m-auto abt_card" data-aos='flip-down'>
 
 
 
@@ -219,7 +219,7 @@ Digital Bazar
 <!-- 3rd map part start  -->
 <div class="row mt-5">
 
-<div class="col-sm-8 m-auto abt_card" >
+<div class="col-sm-8 m-auto abt_card" data-aos='flip-down' >
 <h3>  हामी लाई सम्पर्क गर्नुस् | </h3>
 <hr>
 

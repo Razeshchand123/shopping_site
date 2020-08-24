@@ -193,6 +193,7 @@ border:1px solid black;}
 }
 table thead{
   background-color:var(--main-bg-color);
+  color:white;
 }
 table thead th{border:0 1px 0px 1px;}
 #imgspan{
@@ -240,7 +241,7 @@ display: inline-block;
 
 /* Create an active/current tablink class */
 .tab button.active {
-  background-color: #ccc;
+  background-color: #02f42a;
 }
 
 /* Style the tab content */
@@ -346,13 +347,14 @@ kbd{
 @media screen and (max-width:576px){
   .model {width:58% !important;}
   .modal-content {width:60%;}
+  .listtable{
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+  }
  
  }
- /* ================================================== */
-@media screen and (max-width:576px){
- .model {width:58% !important;}
 
-}
 /* ================ */
 @media screen and (max-width:997px){
   table th, .table td {

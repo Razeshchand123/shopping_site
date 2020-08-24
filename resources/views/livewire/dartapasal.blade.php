@@ -88,10 +88,10 @@
   
   <div class="d-flex justify-content-between">
   <p class="tcolor">सामान बारे</p>
-  <a href="/aproduct"><small>सामान थपनुस</small></a>
+  <a href="/aproduct"><i class="fas fa-plus-circle p-1 text-success"></i><small>सामान थपनुस</small></a>
     </div>
 
-  <table class="table table-hover table-striped table-sm table-bordered">
+  <table class="table table-hover table-striped table-sm table-bordered listtable">
     <thead>
       <!-- <th><small>Id</small></th> -->
       <th><small>नाम </small></th>
@@ -114,6 +114,7 @@
  
   
     @forelse($peoductdata as $val)
+    
     <tr>
       <!-- <td>{{$val->id}}</td> -->
       <td>{{$val->pn}}</td>
@@ -165,7 +166,7 @@
      
       </td>
 <td class="d-flex">
-<button class="btn "><i class="far fa-edit text-warning"></i></button>
+<button class="btn "><i class="far fa-edit text-danger"></i></button>
 <!-- <button class="btn"><i class="fas fa-trash-alt text-danger"></i></button> -->
 
 <!-- model code start -->
@@ -236,7 +237,7 @@
    आफूले दर्ता गरेको नाम र पासवर्ड ईमेल हरु गोप्य राख्नु होला|<br>
   ग्राहक ले हजुर को सामान किन्दा हजुर ले दिएको मोबाइल नंबर ईमेल वा हजुर को ठेगाना मा सम्पर्क गर्ने हुनाले सही जानकारी दिनुहोला|</p>
  
-  <img src=" storage/thispics/error.jpg" alt=""  class="w-100 img-responsive rounded-thumbnail ">
+  <img src=" storage/thispics/error1.svg" alt=""  class="w-100 img-responsive rounded-thumbnail ">
    
   </li>
 
@@ -282,6 +283,16 @@
 
   
  </li>
+  <br>
+
+  <li class="text-center">
+  <p> भिडियो हेरेर बिस्तारित  प्रक्रिया बुज्नुस | </p>
+  <iframe width="620" height="415"
+src="https://www.youtube.com/embed/tgbNymZ7vqY">
+</iframe>
+
+
+  </li>
   <br>
   <li class="text-center shadow-none bg-white"><a href="/about">हामी बारे आझ बुज्नुस |</a></li>
 </ul>
