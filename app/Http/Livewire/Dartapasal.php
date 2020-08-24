@@ -74,9 +74,29 @@ public function updated($field){
 public function deleteproduct($tid){
     $d_std=new product;
     $d_target=$d_std->find($tid);
+
+    $path=$d_target->pi;
+
+    $path=explode("##",$path);
+
+    $path1="public".trim($path[1],"public"); 
+    $path2="public".trim($path[2],"public"); 
+    $path3="public".trim($path[3],"public"); 
+  
+
+
+    Storage::delete($path1);
+    Storage::delete($path2);
+    Storage::delete($path3);
+
+
+
+
     $result=$d_target->delete();
     if($result){
         session()->flash("done","data deleted sussufully");
+       
+            
         return redirect('/home');
     }
 

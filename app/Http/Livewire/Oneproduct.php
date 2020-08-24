@@ -4,6 +4,7 @@ namespace App\Http\Livewire;
 
 use Livewire\Component;
 use App\product;
+use Illuminate\Support\Facades\Storage;
 
 class Oneproduct extends Component
 {

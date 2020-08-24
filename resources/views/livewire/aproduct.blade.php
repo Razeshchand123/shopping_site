@@ -48,18 +48,25 @@
                       @error("pdetail") <small class="text-danger">{{$message}}</small> @enderror
                       <hr>
 
-                 <a href="https://www.remove.bg/upload" target="_balnk"><p>तपाई को समान को background <kbd class="bg-info">सेतो(white)</kbd> पर्नुस |</p></a>
-                         <label for="setprofile" id="labeforsetprofile" class="mt-2">
+                  <a href="https://www.remove.bg/upload" target="_balnk"><p>तपाई को समान को background <kbd class="bg-info">सेतो(white)</kbd> पर्नुस |</p></a>
+                  <p class="mt-2">3ta photos secect garnus</p>       
+                  <label for="setprofile" id="labeforsetprofile" >
                          @if ($productimg )
-                         <img src="{{ $productimg->temporaryUrl() }}" height="100">
-                    
+                         @foreach($productimg as $photo)
+                         <div style="position:reletive;">
+                         <button wire:click="removepic({{$loop->index}})" style="position:absolute;left:3%;" class="btn"> <i class="fas fa-times text-danger "></i></button>
+                         <img src="{{ $photo->temporaryUrl() }}" height="100" >
+                      
+                         </div>
+                         
+                         @endforeach
                          @endif
                              <small id="imgspan">समान को फोटो </small>
                              <span wire:loading wire:target="productimg" >Uploading...<i class=" ml-2 mt-4 fas fa-spinner text-danger fa-2x"></i></span>
 
                       
                             <i class="far fa-images fa-2x"></i></label>
-                             <input  type="file"  wire:model="productimg"  class="d-none" id="setprofile">
+                             <input  type="file"  wire:model="productimg"  class="d-none" id="setprofile" multiple>
                              @error("productimg") <small class="text-danger">{{$message}}</small> @enderror<br>
     
                        <div>

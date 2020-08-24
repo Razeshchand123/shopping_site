@@ -7,6 +7,8 @@ use Illuminate\Support\Facades\Storage;
 use App\product;
 class Products extends Component
 {
+public $remond;
+
 public $search;
 public $std1=3;
 public $label;

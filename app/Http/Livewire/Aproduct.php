@@ -35,10 +35,13 @@ public $twoth;
 public $third;
 public $catagory;
 
-
+public $totalimg;
+public $path1;
+public $path2;
+public $path3;
 
 public $pname;
-public $productimg;
+public $productimg=[];
 public $price;
 public $pdetail;
 
@@ -74,7 +77,7 @@ public function updated($field){
 
     $this->validateOnly($field,[
     "pname"=>"required|min:3|max:25",
-      "productimg"=>"required|image",
+      "productimg.*"=>"required|image",
       "price"=>'required|numeric|min:2',
       "pdetail"=>"required|max:500|min:150",
     ],[
@@ -103,7 +106,7 @@ public function addproduct(){
 
 $this->validate([
     "pname"=>"required|min:3|max:25",
-    "productimg"=>"required|image",
+    "productimg.*"=>"required|image",
     "price"=>"required|min:1",
     "pdetail"=>"required|max:500|min:150",
   
@@ -135,13 +138,37 @@ $this->validate([
 //                          ->encode("jpeg");
 //  $imgpath="/product/".Str::random(10).rand().".jpeg";   
 //  Storage::disk("public")->put("$imgpath",$img1);                      
+// $this->productimg as $photo
+
+    // $imgpath0=$this->productimg[0]->store("public/product");
+    // $imgpath1=$this->productimg[1]->store("public/product");
+    // $imgpath2=$this->productimg[2]->store("public/product");
+    // $totalimg=$imgpath0."##".$imgpath1."##".$imgpath2;
+    
+    // $totalimg=$this->productimg->store("public/product");
+    
+
+ foreach($this->productimg as $photo){
+    $a = $photo->store("public/product");
+ 
+    $this->totalimg .="##".$a;
 
 
+ }
 
- $imgpath=$this->productimg->store("public/product");
+
+$std->pi=$this->totalimg;
+
 
  $std->pn=$this->pname;
- $std->pi=$imgpath;
+
+
+   
+
+
+
+
+
  $std->pp=$this->price;
  $std->pd=$this->pdetail;
 
@@ -169,7 +196,9 @@ if($result){
 
 }
 
-  
+ public function removepic($index){
+     array_splice($this->productimg,$index,1);
+ }
 
     public function render()
     {

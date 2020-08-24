@@ -16,23 +16,50 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-    @php   $path= trim($value->pi,"public"); @endphp
 
-      <img class="d-block w-100 image-fluid" src="http://127.0.0.1:8000/storage{{$path}}" alt="First slide">
+    @php  
+   
+    $path=explode("##",$value->pi);
+ 
+ $len=count($path);
+ 
+if($len==2){
+  $path1=trim($path[1],"public");
+  $path2=trim($path[1],"public"); 
+  $path3=trim($path[1],"public"); 
+}
+if($len==3){
+  $path1=trim($path[1],"public");
+  $path2=trim($path[2],"public"); 
+  $path3=trim($path[1],"public"); 
+}
+if($len==4){
+  $path1=trim($path[1],"public");
+  $path2=trim($path[2],"public"); 
+  $path3=trim($path[3],"public"); 
+}
+
+ 
+     
+    @endphp
+
+
+      <img class="d-block w-100 image-fluid" src="http://127.0.0.1:8000/storage{{$path1}}" alt="First slide" >
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100 image-fluid" src="http://127.0.0.1:8000/storage{{$path}}" alt="Second slide">
+      <img class="d-block w-100 image-fluid" src="http://127.0.0.1:8000/storage{{$path2}}" alt="Second slide" >
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100 image-fluid" src="http://127.0.0.1:8000/storage{{$path}}" alt="Third slide">
+      <img class="d-block w-100 image-fluid" src="http://127.0.0.1:8000/storage{{$path3}}" alt="Third slide" >
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  <i class="fas fa-arrow-circle-left text-danger p-2 bg-warning"></i>
     <span class="sr-only">Previous</span>
   </a>
   <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    
+    <i class="fas fa-arrow-circle-right text-danger p-2 bg-warning"></i>
     <span class="sr-only">Next</span>
   </a>
 </div>

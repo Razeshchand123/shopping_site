@@ -1,5 +1,5 @@
 <div>
- 
+
 
 <h3> <span class="text-capitalize tcolor">{{Auth()->user()->name}}</span > Digital Bazar मा स्वागत  छ |  हजुर लाई  <i class="fas fa-praying-hands tcolor ml-2"></i></h3>
  <small class="text-capitalize">तपाई को उत्पादन लाई अन्तर रातरीय बजार मा पुगौने जीमेवारी हाम्रो</small>
@@ -123,7 +123,11 @@
 
      <td>
     @if(storage::url($val->pi))
-     <img src="{{storage::url($val->pi)}}" alt="noimg" height="50" width="50">
+    @php 
+    $path=explode("##",$val->pi);
+    $path1=trim($path[1],"public"); 
+    @endphp
+     <img src="{{storage::url($path1)}}" alt="noimg" height="50" width="50">
      @endif
 
      </td>

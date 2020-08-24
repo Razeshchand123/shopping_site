@@ -298,6 +298,14 @@ align-items: center;
 }
 
 
+.carousel-control-next-icon , .carousel-control-prev-icon{
+   background:yellow;
+   
+}
+
+.carousel-control-next,.carousel-control-prev {
+ opacity: 1;
+}
 @media screen and (min-width:758px){
 
   .addproduct_shop_part{

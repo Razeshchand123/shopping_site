@@ -21,10 +21,27 @@
 @forelse($data as $value)
 <div class="col-sm-4 parent d-flex flex-column justify-content-center my-4 " >
 <!-- ----------------------------------------------------- -->
-@php   $path= trim($value->pi,"public"); @endphp
-       <img src=" http://127.0.0.1:8000/storage{{$path}}" alt="noimg" class="rounded pimg  img-responsive" height="250" width="250">
+@php   
+
+$path=explode("##",$value->pi);
+$len=count($path);
+$path1=trim($path[1],"public"); 
+if($len==3){
+  $path1=trim($path[1],"public");
+  $path2=trim($path[2],"public"); 
+  $path3=trim($path[1],"public"); 
+}
+if($len==4){
+  $path1=trim($path[1],"public");
+  $path2=trim($path[2],"public"); 
+  $path3=trim($path[3],"public"); 
+}
+@endphp
+
+ <img src=" http://127.0.0.1:8000/storage/{{$path1}}" alt="noimg" class="rounded pimg  img-responsive" height="250" width="250"/>
 
 
+ 
      <!-- slidehunewala transparent div start -->
      <div class="text-content">
          <!-- modelcodestart -->
@@ -48,12 +65,16 @@
                                 </button>
                             </div>
                             <div class="modal-body">
-
-
-                                         <img src="http://127.0.0.1:8000/storage{{$path}}" alt="noimg" height="80" style="margin-left:8%;">
-
-
-                        <ul class="modelkoul">
+                           
+                            <div class="row">
+                              <div class="col-sm-6">
+                              <a href="#">
+                           <img src="http://127.0.0.1:8000/storage/{{$path1}}" alt="noimg" height="80" style="margin-left:8%;">
+                             
+                           </a>
+                              </div>
+                              <div class="col-sm-6">
+                              <ul class="modelkoul">
                                 <li>नाम : <span class="details text-capitalize"> {{$value->pn}}</span></li>
                                 <li>मुल्य:Rs <span class="details">Rs. {{$value->pp}}</span></li>
                                 
@@ -81,7 +102,13 @@
      <li>पसल धनी: <span class="details">ashok chand</span></li>
      <li>पसल को ठेगाना: <span class="details">manr-4,bazar galin-5,kanchanpur</span></li> -->
                  </ul>
+                      
+                              </div>
                             </div>
+                           
+                        
+
+                                               </div>
                                     <div class="modal-footer d-flex justify-content-between">
                                     <a href="/" class="btn btn-outline-danger" data-dismiss="modal"><small>मन परेन</small><i class="fas fa-times text-danger"></i></a>
                                     <a href="/one/{{$value->id}}"  class="btn  btn-gulabi"><small>थप जानकारी</small><i class="fas fa-check"></i></a>
