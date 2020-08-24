@@ -72,13 +72,16 @@ public function updated($field){
 
 
 public function deleteproduct($tid){
+ 
     $d_std=new product;
     $d_target=$d_std->find($tid);
 
     $path=$d_target->pi;
-
+   
     $path=explode("##",$path);
-  $len=count($path);
+     $len=count($path);
+
+
  if($len==2){
     $path1="public".trim($path[1],"public"); 
     Storage::delete($path1);

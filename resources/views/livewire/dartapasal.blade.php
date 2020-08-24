@@ -171,12 +171,12 @@
 
 <!-- model code start -->
 <!-- Button trigger modal -->
-<button type="button" class="btn " data-toggle="modal" data-target="#exampleModalLong">
+<button type="button" class="btn " data-toggle="modal" data-target="#exampleModalLong{{$val->id}}">
 <i class="fas fa-trash-alt text-danger"></i>
 </button>
 
 <!-- Modal -->
-<div style="width:87%;" class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+<div style="width:87%;" class="modal fade" id="exampleModalLong{{$val->id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
