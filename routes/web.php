@@ -18,3 +18,9 @@ Route::livewire("/about","about");
 Route::livewire("/note","note");
 
 Route::livewire("/graph","graph");
+
+
+
+Route::livewire("/admin","admin");
+
+Route::livewire("/oneshop/{xid?}","oneshop");

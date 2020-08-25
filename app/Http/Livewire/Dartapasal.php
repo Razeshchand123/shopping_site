@@ -113,8 +113,7 @@ public function deleteproduct($tid){
     $result=$d_target->delete();
     if($result){
         session()->flash("done","data deleted sussufully");
-       
-            
+          
         return redirect('/home');
     }
 

@@ -12,5 +12,9 @@ echo in_array(8,$a);
 @endphp
 
 
-
+<button wire:click="$emitTo('oneshop','oneshopkey')">detail</button>
 </div>
+
+
+
+    
