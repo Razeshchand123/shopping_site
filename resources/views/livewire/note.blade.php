@@ -1,18 +1,18 @@
 <div class="d-flex justify-content-center">
 
 
-@php
+@forelse($ulist as $val)
+<p>{{$val->name}}</p>
+<button wire:click="deleteuser({{$val->id}})">click</button>
+<hr>
+@empty
+@endforelse
 
 
 
-$a=["one"=>1,"two"=>2,"three"=>3,"four"=>3];
-
-echo in_array(8,$a);
-
-@endphp
 
 
-<button wire:click="$emitTo('oneshop','oneshopkey')">detail</button>
+
 </div>
 
 

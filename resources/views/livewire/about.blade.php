@@ -1,5 +1,10 @@
 <div>
-  
+<!--  -->
+  <div style="position:fixed;bottom:5%;left:48%;">
+  <button wire:click="$emit('scrollkey')" class="btn animate__animated animate__bounce animate__slower animate__infinite">
+  <i class="fas fa-chevron-down "></i>
+ </button>
+  </div>
   
 <div class="container">
 <div class="row">
@@ -250,4 +255,15 @@ Digital Bazar
   color:#551a8b;
 margin:auto 2%;}
 </style>
+<script>
+window.livewire.on('scrollkey', ()=> {
+  alert("hello");
+  function scrollWin() {
+
+window.scrollBy(0,200);
+}
+    
+})
+</script>
+
  </div>
