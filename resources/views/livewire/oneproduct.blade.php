@@ -77,7 +77,7 @@ if($len==4){
                                     @if($value->b)<span class="rang-black rang"></span>  @endif
                                     @if($value->gry)<span class="rang-grey rang"></span>  @endif
                                     @if($value->w)<span class="rang-white rang"></span>  @endif
-                                    @if($value->o)<input class=" mt-3" type="checkbox" wire:model="other" ><span class="tcolor">Other</span>  @endif
+                                    @if($value->o)<span class="tcolor ml-3"><span class="rang-other rang"></span>Other</span>  @endif
                                 </span>
                               
      
@@ -99,7 +99,31 @@ if($len==4){
      <li>पसल को ठेगाना: <span class="details">{{$value->psla}}</span></li><br>
 
 
-     <li>भुक्तानी गर्नुस् : <a href="#"> <img class="ml-2" src="http://127.0.0.1:8000/storage/thispics/card1.png" alt="" height="50"></a> </li>
+     <li class="d-flex justify-content-start align-items-center">भुक्तानी गर्नुस् : 
+     
+
+
+
+
+     <form action="https://uat.esewa.com.np/epay/main" method="POST">
+    <input value="{{$value->pp + 10}}" name="tAmt" type="hidden">
+    <input value="{{$value->pp}}" name="amt" type="hidden">
+    <input value="5" name="txAmt" type="hidden">
+    <input value="2" name="psc" type="hidden">
+    <input value="3" name="pdc" type="hidden">
+    <input value="epay_payment" name="scd" type="hidden">
+    <input value="ee2c3ca1-696b-4cc5-a6be-2c40d929d453" name="pid" type="hidden">
+    <input value="http://merchant.com.np/page/esewa_payment_success?q=su" type="hidden" name="su">
+    <input value="http://merchant.com.np/page/esewa_payment_failed?q=fu" type="hidden" name="fu">
+    <button value="Submit" type="submit" target="_blank" class="btn">
+     <img class="ml-2" src="http://127.0.0.1:8000/storage/thispics/card1.png" alt="" height="50">
+     </button>
+    </form>
+    
+
+    <a href=""><img class="ml-2" src="http://127.0.0.1:8000/storage/thispics/khalti.png" alt="" height="60">
+ </a>
+      </li>
     </ul>
 
 

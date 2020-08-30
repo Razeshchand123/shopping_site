@@ -27,16 +27,41 @@
 
 @forelse($data as $value)
 
+@php 
+$old =$value->created_at->format('d-m-Y') ;
+$oyear= date('d-m-Y', strtotime($old. ' + 1 year'));
+$current =date('d-m-Y');
+$a=strtotime($oyear);
+$b=strtotime($current);
+$diff=floor(($a-$b)/86400);
 
-<table class="table table-striped table-hover  ">
+ 
+@endphp
+
+<div class="d-flex justify-content-around align-items-center">
+<div style="display:grid;place-items:center;">
+<img src='{{Storage::url($value->slogo)}}' alt="no img" class="img-fliud" height="200" style=" filter: drop-shadow(0px 2px 12px blue);" />
+<h3 style="margin-top:-20%;" >{{$value->sname}}</h3>
+</div>
+<div>
+<table class="table table-striped table-hover" >
 <tr><td>पसल को नाम</td><td class="tcolor text-capitalize">{{$value->sname}}</td></tr>
 <tr><td>पसल को ठेगाना:</td><td class="tcolor text-capitalize">{{$value->saddress}}</td></tr>
-<tr><td>पसल को बेनर:</td><td class="tcolor text-capitalize">
-<img src='{{Storage::url($value->slogo)}}' alt="no img" class="img-fliud" height="200"/></td></tr>
+<tr><td >जम्मा समानहरु: </td><td class="tcolor text-capitalize bg-warning">{{$peoductdata->count()}}</td></tr>
+
 <tr><td>पसल धनी को नाम:</td><td class="tcolor text-capitalize">{{$value->oname}}</td></tr>
 <tr><td>पसल को नंबर:</td><td class="tcolor text-capitalize">{{$value->omobile}}</td></tr>
 <tr><td>पसल को ईमेल:</td><td class="tcolor text-capitalize">{{$value->oemail}}</td></tr>
+<hr>
+<tr><td>पसल दर्ता गरेको दिन :</td><td class="tcolor text-capitalize">{{$value->created_at->format('d-m-Y')}}</td></tr>
+<tr><td>पसल को अबधी:</td><td class="tcolor text-capitalize">{{$oyear}}</td></tr>
+<tr><td>पसल नविकरण गर्न बाकि दिन :</td><td class="text-danger text-capitalize">{{$diff}} days</td></tr>
+
 </table>
+</div>
+</div>
+
+
 @empty
 
 <a href=""> <h4 class="mt-5">आफ्नो पसल दर्ता गर्नुस् <i class="fas fa-store tcolor"></i></h4></a>

@@ -1,5 +1,6 @@
 *{
 text-transform: capitalize;
+font-size: 99%;
 }
 ::selection{
   color:red;
@@ -49,7 +50,7 @@ body{
   transition: all 1s ease-in-out;
 }
 
-nav{
+nav,.card-header{
   background-color: var(--main-bg-color);
     margin: 0;
     
@@ -167,7 +168,8 @@ transform: scale(1.3);
 .rang-white{background: whitesmoke;
 border:1px solid black;}
 
-.rang-other{background: radial-gradient(var(--main-bg-color), transparent);}
+.rang-other{background: radial-gradient(blue, transparent);
+  background-color: red;}
 .sizescontrol{
   border-bottom:1px solid var(--main-bg-color);
 }
@@ -307,6 +309,31 @@ align-items: center;
 .carousel-control-next,.carousel-control-prev {
  opacity: 1;
 }
+
+.slowfill{
+  position: relative;
+  font-weight: bolder;
+  cursor: pointer;
+ 
+
+}
+.slowfill:before{
+  
+  content: "Digital_Bazar";
+  position:absolute;
+  /* top:0; */
+  left: 0;
+  width: 0%;
+   color: red;
+  overflow: hidden;
+  transition: all 3s ease-in-out;
+}
+.slowfill:hover:before{
+   
+  width: 100%;
+}
+
+
 @media screen and (min-width:758px){
 
   .addproduct_shop_part{

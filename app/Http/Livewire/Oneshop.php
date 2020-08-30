@@ -112,8 +112,6 @@ $d_target[$i]->delete();
     Storage::delete($userimg);
   }
 
-
-   $userdata->delete();
 // user deleting on user table 
 
 

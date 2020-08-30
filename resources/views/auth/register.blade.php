@@ -4,9 +4,9 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card" style=" border:1px solid #b50697;
+            <div class="card" style=" border:1px solid #3468cd;
   ">
-                <div class="card-header tcolor">{{ __('Register') }}</div>
+                <div class="card-header text-white">{{ __('Register') }}</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}" enctype="multipart/form-data">

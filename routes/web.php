@@ -23,4 +23,7 @@ Route::livewire("/graph","graph");
 
 Route::livewire("/admin","admin");
 
+
 Route::livewire("/oneshop/{xid?}","oneshop");
+
+Route::livewire("/cart/{collection?}","cart");

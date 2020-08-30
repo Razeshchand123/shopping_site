@@ -14,12 +14,13 @@ $current =date('d-m-Y');
 $a=strtotime($oyear);
 $b=strtotime($current);
 $diff=floor(($a-$b)/86400);
+
  
 @endphp 
 <div class="shopinformation d-flex justify-content-around">
 <!-- ///////////////////////////////////// -->
         <div>
-        <img src='{{Storage::url($value->slogo)}}' alt="no img" class="img-fliud" height="200"/>
+        <img src='{{Storage::url($value->slogo)}}' alt="no img" class="img-fliud" height="200" style=" filter: drop-shadow(0px 2px 12px blue);"/>
         
         <h3 class="text-center">{{$value->sname}}</h3>
         <p class="text-center">{{$value->created_at->diffForHumans()}}</p>
@@ -30,16 +31,16 @@ $diff=floor(($a-$b)/86400);
 <div class="shop_textdata">
 <table class="table">
 <tr><td >पसल को नाम: </td><td class="tcolor text-capitalize">{{$value->sname}}</td></tr>
-<tr><td >total products: </td><td class="tcolor text-capitalize bg-warning">{{$data->count()}}</td></tr>
-<tr><td >created at: </td><td class="tcolor text-capitalize">hhhhhhh</td></tr>
+<tr><td >जम्मा समानहरु: </td><td class="tcolor text-capitalize bg-warning">{{$data->count()}}</td></tr>
+<tr><td >something: </td><td class="tcolor text-capitalize">hhhhhhh</td></tr>
 <tr><td>पसल को ठेगाना: </td><td class="tcolor text-capitalize">{{$value->saddress}}</td></tr>
 <tr><td>पसल धनी को नाम: </td><td class="tcolor text-capitalize">{{$value->oname}}</td></tr>
 <tr><td>पसल को नंबर: </td><td class="tcolor text-capitalize">{{$value->omobile}}</td></tr>
 <tr><td>पसल को ईमेल:</td><td class="tcolor text-capitalize">{{$value->oemail}}</td></tr>
 
-<tr><td>Agrrement AT::</td><td class="tcolor text-capitalize">{{$value->created_at->format('d-m-Y')}}</td></tr>
-<tr><td>Agrrement samma::</td><td class="tcolor text-capitalize">{{$oyear}}</td></tr>
-<tr><td>Agrrement Renew before:</td><td class="tcolor text-capitalize">{{$diff}} days</td></tr>
+<tr><td>पसल दर्ता गरेको दिन :</td><td class="tcolor text-capitalize">{{$value->created_at->format('d-m-Y')}}</td></tr>
+<tr><td>पसल को अबधी:</td><td class="tcolor text-capitalize">{{$oyear}}</td></tr>
+<tr><td>पसल नविकरण गर्न बाकि दिन :</td><td class="tcolor text-capitalize bg-warning">{{$diff}} days</td></tr>
 
 <tr><td>payment varified:</td><td class="tcolor text-capitalize"> <i class="fas fa-check-square  text-info"></i>yes</td></tr>
 </table>

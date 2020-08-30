@@ -5,6 +5,7 @@ namespace App\Http\Livewire;
 use Livewire\Component;
 use Illuminate\Support\Facades\Storage;
 use App\product;
+use App\cart;
 class Products extends Component
 {
 public $remond;
@@ -16,12 +17,25 @@ public $swt;
 public $c1;
 public $c2;
 public $c3;
+
+
+public $collection;
+
 protected $listeners = ['postAdded'=>"cloth","twocata"=>"twocata","threest"=>"threest"];
 
 
 
+
+
+public function adtocart($cid){
+
+$this->collection.="++".$cid;
+
+}
+
+
 public function cloth($c1){
-    $this->c1=$c1;
+ $this->c1=$c1;
  $this->swt=1;
 
     
@@ -79,7 +93,7 @@ public function ssearch(){
 
                 default:
                 
-        $data =product::where('pn', $this->search)
+            $data =product::where('pn', $this->search)
             ->orWhere('pn', 'like', '%' . $this->search . '%')->orderBy("id","desc")->get();
     
                    // $std=new product;
@@ -88,14 +102,6 @@ public function ssearch(){
         }
 
   
-
-
-
-
-
-
-
-
 
     }
 }

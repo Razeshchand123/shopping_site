@@ -11,17 +11,17 @@
 
 <div class="col-sm-8 m-auto abt_card" style="line-height:26px;">
 
-  <p>
  
-<span class="display-4 tcolor">
-<img src=" storage/thispics/logo.png" alt="no img"  class="border border-dark img-responsive rounded-circle p-2" width="50" height="50"/>
  
-Digital Bazar
 
-
+<img src=" storage/thispics/logo.png" alt="no img"  class="border border-dark img-responsive rounded-circle mb-4" width="50" height="50"/>
+<span class="display-4 tcolor slowfill ">
+Digital_Bazar
 </span>
+
 <hr>
 <h3> सर्व प्रथम हजुर लाई  स्वागत छ| </h3>
+<p>
 <br> Digital Bazar ले हजुर को मौलिक अथवा घरेलु उत्पादन लाई बिस्व बज़ार सामु पुगाउन सहयोग गर्छ|<br>
 आज को संसार धेरै नै आधुनीक भइसकेको छ| 
 ठुल-ठूला सहरहरु को साथ साथमा हरेक गाउहरु पनि आधुनिकरण तिर बढी रहेको छन  | <br>
@@ -151,39 +151,39 @@ Digital Bazar
     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
   </ol>
   <div class="carousel-inner ">
-    <div class="carousel-item active">
+    <div class="carousel-item active" style=" padding-left: 12%; padding-right: 8%;">
       <div class="d-block w-100" >
 
 
-      <div class="d-flex">
-      <img src="storage/testo/one.jpeg" alt="no img"  class=" text-center border border-dark img-responsive p-2 rounded-circle"height="100" width="100"/>
-      <i class="m-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure quos illo totam nemo tempora illum quod nihil deleniti. Quaerat expedita obcaecati error autem praesentium inventore tempora fugiat accusamus non suscipit!</i>
+      <div class="d-flex justify-content-center align-items-center">
+      <img src="storage/testo/one.jpg" alt="no img"  class=" text-center border border-dark img-responsive p-2 rounded-circle"height="100" width="100"/>
+      <i class="m-3 text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure quos illo totam nemo tempora illum quod nihil deleniti. Quaerat expedita obcaecati error autem praesentium inventore tempora fugiat accusamus non suscipit!</i>
       </div>
 
        </div>
     </div>
-    <div class="carousel-item">
+    <div class="carousel-item" style=" padding-left: 12%; padding-right: 8%;">
       <div class="d-block w-100" >
       
 
 
-      <div class="d-flex">
-      <img src="storage/testo/three.jpeg" alt="no img"  class=" text-center border border-dark img-responsive p-2 rounded-circle"height="100" width="100"/>
-      <i class="m-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure quos illo totam nemo tempora illum quod nihil deleniti. Quaerat expedita obcaecati error autem praesentium inventore tempora fugiat accusamus non suscipit!</i>
+      <div class="d-flex justify-content-center align-items-center">
+      <img src="storage/testo/three.jpg" alt="no img"  class=" text-center border border-dark img-responsive p-2 rounded-circle"height="100" width="100"/>
+      <i class="m-3 text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure quos illo totam nemo tempora illum quod nihil deleniti. Quaerat expedita obcaecati error autem praesentium inventore tempora fugiat accusamus non suscipit!</i>
       </div>
 
 
 
          </div>
     </div>
-    <div class="carousel-item">
+    <div class="carousel-item" style=" padding-left: 12%; padding-right: 8%;">
       <div class="d-block w-100" >
      
          
          
-      <div class="d-flex">
-      <img src="storage/testo/two.jpeg" alt="no img"  class=" text-center border border-dark img-responsive p-2 rounded-circle"height="100" width="100"/>
-      <i class="m-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure quos illo totam nemo tempora illum quod nihil deleniti. Quaerat expedita obcaecati error autem praesentium inventore tempora fugiat accusamus non suscipit!</i>
+      <div class="d-flex justify-content-center align-items-center">
+      <img src="storage/testo/two.jpg" alt="no img"  class=" text-center border border-dark img-responsive p-2 rounded-circle"height="100" width="100"/>
+      <i class="m-3 text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure quos illo totam nemo tempora illum quod nihil deleniti. Quaerat expedita obcaecati error autem praesentium inventore tempora fugiat accusamus non suscipit!</i>
       </div>
 
 
@@ -191,11 +191,12 @@ Digital Bazar
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  <i class="fas fa-arrow-circle-left text-danger p-2 "></i>
     <span class="sr-only">Previous</span>
   </a>
   <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    
+    <i class="fas fa-arrow-circle-right text-danger p-2 "></i>
     <span class="sr-only">Next</span>
   </a>
 </div>

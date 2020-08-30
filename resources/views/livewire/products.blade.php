@@ -14,9 +14,11 @@
 </div>
 
 <!-- searchbox code here  -->
+@if(session()->has("addcart"))
+ <div class="d-flex justify-content-center"><small class="text-center text-danger">{{session()->get("addcart")}} </small></div>
+ @endif
 
  <div class="row mb-4 " height="100" >
-
 <!-- --------------------------------------------------------------------- -->
 @forelse($data as $value)
 <div class="col-sm-4 parent d-flex flex-column justify-content-center my-4 " >
@@ -46,9 +48,15 @@ if($len==4){
      <div class="text-content">
          <!-- modelcodestart -->
                                <!-- Button trigger modal -->
-                            <button type="button" class="btn   btn-gulabi" data-toggle="modal" data-target="#exampleModal{{$value->id}}">
+                            <button type="button" class="btn btn-gulabi" data-toggle="modal" data-target="#exampleModal{{$value->id}}">
                             Buy now
                             </button>
+                            <!-- add to cart cose start  -->
+                            
+                              <button wire:click="adtocart({{$value->id}})"  class="btn btn-gulabi" > add to cart</button>
+                         
+
+                            <!-- add to cart code end  -->
 
                         <div  class="w-uto ml-auto modal fade" id="exampleModal{{$value->id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered" role="document">
@@ -84,7 +92,7 @@ if($len==4){
                                     @if($value->b)<span class="rang-black rang"></span>  @endif
                                     @if($value->gry)<span class="rang-grey rang"></span>  @endif
                                     @if($value->w)<span class="rang-white rang"></span>  @endif
-                                    @if($value->o)<input class=" mt-3" type="checkbox" wire:model="other" ><span class="tcolor">Other</span>  @endif
+                                    @if($value->o)<span class="tcolor ml-3"><span class="rang-other rang"></span>Other</span>  @endif
                                 </span>
                                 </li>
 
@@ -121,7 +129,7 @@ if($len==4){
      </div>
     <!-- slidehunewla transparent div end -->
 
-
+    <!-- <small class="text-center pt-2">Rs. {{$value->pn}}</small> -->
     <h5 class="text-center pt-2">Rs. {{$value->pp}}</h5>
 <!-- --------------------------------------------------------------------------------------------------- -->
 </div>
@@ -132,6 +140,36 @@ if($len==4){
 
 </div>
  </div> 
+
+
+
+<div style="position:fixed; top:17%;right:10%">
+@if($collection)
+@php 
+$arry_of_ids=explode("++",$collection);
+
+$totalproduct= count($arry_of_ids);
+
+@endphp
+
+{{--$totalproduct}}
+
+
+<a href="/cart/@php echo $collection; @endphp ">:<i class="fas fa-shopping-cart"></i>products</a>
+
+
+@else
+  0 :products;
+@endif
+
+
+
+
+</div>
+
+
+
+
  </div>  
 
 

@@ -19,13 +19,13 @@
             
             <div class="row">
          
-           <div class="col-md-4 bgg addproduct_shop_part">
+           <div class="col-md-4 bgg addproduct_shop_part ">
          
-          <img src='{{Storage::url($value->slogo)}}' alt="no img" class="img-fliud" height="200" />
-            <p class="tcolor text-capitalize">{{$value->sname}}</p>
-           <span class="tcolor text-capitalize">{{$value->saddress}}</span>
+          <img src='{{Storage::url($value->slogo)}}' alt="no img" class="img-fliud" height="200" style=" filter: drop-shadow(0px 2px 12px blue);"/>
+            <p class="text-center text-capitalize">{{$value->sname}}</p>
+           <p class="text-center text-capitalize">{{$value->saddress}}</p>
            <hr>
-           <p class="tcolor text-capitalize">total product: 458</p>
+           <p class="text-center text-capitalize">total product: <small>loading...</small></p>
         
            </div>
     
