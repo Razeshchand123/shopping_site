@@ -155,7 +155,7 @@ $totalproduct= count($arry_of_ids);
 {{--$totalproduct}}
 
 
-<a href="/cart/@php echo $collection; @endphp ">:<i class="fas fa-shopping-cart"></i>products</a>
+<a href="/cart/@php echo $collection; @endphp ">:<i class="fas fa-shopping-cart p-1 text-success"></i>products</a>
 
 
 @else
