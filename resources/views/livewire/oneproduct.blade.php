@@ -72,7 +72,7 @@ if($len==4){
      <li>मुल्य:Rs <span class="details">Rs.{{$value->pp}}</span></li><br>
      <li> अरु रंग: <span class="details">
        
-                            @if($value->r)<span class="rang-red rang"></span>  @endif
+                              @if($value->r)<span class="rang-red rang"></span>  @endif
                                     @if($value->g)<span class="rang-green rang"></span>  @endif
                                     @if($value->b)<span class="rang-black rang"></span>  @endif
                                     @if($value->gry)<span class="rang-grey rang"></span>  @endif

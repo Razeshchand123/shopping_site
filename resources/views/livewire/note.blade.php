@@ -1,6 +1,6 @@
 <div class="d-flex justify-content-center">
 
-<form action="https://uat.esewa.com.np/epay/main" method="POST" class="d-none">
+  <form action="https://uat.esewa.com.np/epay/main" method="POST" class="d-none">
     <input value="100" name="tAmt" type="hidden">
     <input value="90" name="amt" type="hidden">
     <input value="5" name="txAmt" type="hidden">

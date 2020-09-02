@@ -14,6 +14,7 @@ class Cart extends Component
 
 
 
+
      public function mount($collection){
         $this->collection=$collection;  
      }

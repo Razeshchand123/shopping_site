@@ -57,10 +57,31 @@ $grandtotal= $grandtotal+$total;
 <td><img src=" http://127.0.0.1:8000/storage/{{$path1}}" alt="noimg" class="rounded pimg  img-responsive" height="50" width="50"/></td>
 <td class="price">{{$value->pp}}</td>
 <td>
-<input onChange="increment(this)" type="number" style="width:40px;" class="quentity" min="0" value="1">
+<input onChange="increment(this)" type="number" style="width:40px;" class="quentity" min="0" value="1"  autocomplete="off">
  </td>
-<td><input type="color" class="form-group"></td>
-<td>..</td>
+<td>
+<!-- <span class="rang-red rang"></span><input type="checkbox" wire:model="red" class="mr-5"> -->
+                    
+<span class="details">
+       
+                               @if($value->r)<input type="checkbox" /> <span class="rang-red cart_rang rang"></span><br> @endif
+                                    @if($value->g)<input type="checkbox" /> <span class="rang-green cart_rang rang"></span> <br> @endif
+                                    @if($value->b)<input type="checkbox" /> <span class="rang-black cart_rang rang"></span>  <br> @endif
+                                    @if($value->gry)<input type="checkbox" /> <span class="rang-grey cart_rang rang"></span> <br>  @endif
+                                    @if($value->w)<input type="checkbox" /> <span class="rang-white cart_rang rang"></span><br> @endif
+                                    @if($value->o)<input type="checkbox" /> <span class="rang-other cart_rang rang"></span>  @endif
+                                </span>
+                                                                      
+</td>
+<td>
+                                     @if($value->m)<input type="checkbox" />  M <br> @endif
+                                        @if($value->l)<input type="checkbox" />  L <br> @endif
+                                        @if($value->xl)<input type="checkbox" />  XL <br> @endif
+                                        @if($value->xxl)<input type="checkbox" />  XXL <br> @endif
+                                        @if($value->k)<input type="checkbox" />  K <br> @endif</span>
+
+
+</td>
 <td><p>1%</p></td>
 <td>1%</td>
 <td class="total" >{{$total}}</td>
@@ -77,14 +98,63 @@ $grandtotal= $grandtotal+$total;
 <td></td>
 <td></td>
 <td></td>
-<td>TOTAL</td>
-<td id="total" class="text-center ">{{$grandtotal}}</td>
+<td>TOTAL RS.</td>
+<td id="total" class="text-center" >{{$grandtotal}}</td>
 </tr>
 
 </thead>
 </table>
   
-<button class="btn btn-block btn-info">pay</button>
+<a href="/makepdf">PDF</a>
+<!-- modelcodestart -->
+<!-- Button trigger modal -->
+<button  type="button" class="btn btn-success btn-block" data-toggle="modal" data-target="#exampleModal">
+ Pay Now
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">
+        <span class="display-4 tcolor slowfill ">
+Digital_Bazar
+</span>
+        
+        </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <h5>तपाईले समान बारे दिएको जानकारी सब ठीक छ छैन पुन : हेर्नुस |</h5>
+       <small>सब ठीक छ भने <kbd> ठीक छ</kbd> मा क्लिक गर्नुस् नत्र  <kbd> ठीक छैन</kbd> मा क्लिक गर्नुस् </small>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-danger" data-dismiss="modal">ठीक छैन</button>
+        <!-- esewa code  -->
+        <form action="https://uat.esewa.com.np/epay/main" method="POST">
+    <input id="esewagrandtotal" value="{{$grandtotal}}" name="tAmt" type="hidden">
+    <input id="etax" value="{{$grandtotal}}" name="amt" type="hidden" >
+    <input  value="0" name="txAmt" type="hidden">
+    <input value="0" name="psc" type="hidden">
+    <input value="0" name="pdc" type="hidden">
+
+
+    <input value="epay_payment" name="scd" type="hidden">
+    <input value="ee2c3ca1-696b-4cc5-a6be-2c40d929d453" name="pid" type="hidden">
+    <input value="http://merchant.com.np/page/esewa_payment_success?q=su" type="hidden" name="su">
+    <input value="http://merchant.com.np/page/esewa_payment_failed?q=fu" type="hidden" name="fu">
+    <input value="ठीक छ" type="submit" class="btn btn-outline-success btn-block">
+    </form>
+        <!-- esewacode -->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- modelcode end here  -->
+
 
 
 
@@ -108,12 +178,17 @@ $grandtotal= $grandtotal+$total;
 
 
     var totalarray = document.getElementsByClassName("total");
-    var grandtotal=2;
+    var grandtotal=1;
    for(var i=0;i<totalarray.length;i++){
     grandtotal=grandtotal+parseInt(totalarray[i].outerText);
     
    }
    var tika=document.getElementById("total").innerText=grandtotal;
+   
+  //  eswacode start
+   document.getElementById("esewagrandtotal").value=grandtotal;
+   document.getElementById("etax").value=grandtotal;
+
    
 
 }
