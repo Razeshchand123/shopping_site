@@ -1,10 +1,35 @@
+
+  
 <div>
 
 <div class="container">
 <div class="row">
-<div class="col-sm-9 mx-auto">
+<div class="col-sm-11 mx-auto">
+<div class="row">
+<div class="col-sm-4" style="display:grid;place-items:center;">
+<h5 style="margin-top:13%">aafno jankari dinus</h5>
+<form  wire:submit.prevent="textdetail" class="form-group"><br>
+<input type="text" wire:model="buyername" class="form-control" placeholder="तपाईको नाम"><br>
+<input type="text" wire:model="buyerdistrict " class="form-control" placeholder="तपाईको जिल्ला"><br>
+<input type="text" wire:model="buyervillagename " class="form-control" placeholder="तपाईको गाउ वा सहरको नाम "><br>
+<input type="text" wire:model="buyerward " class="form-control" placeholder="तपाईको वार्ड "><br>
+<input type="text"wire:model="landmark " class="form-control" placeholder="घर नजिक को प्रसिद्ध ठाउ"><br>
+<input type="text" wire:model="buyermobile " class="form-control" placeholder="तपाईको मोबाइल नंबर"><br>
+<small>yo number ma varification code aaun6</small><br>
+
+
+</form>
+</div>
+<div class="col-sm-8">
+
+
+
+
+
+
+
 <h1 class="text-center">YOUR PRODUCTS ARE::</h1>
-<small>tapai lai kunai pami sanamn bare thap jankari chaiye ma diyeko sapark number email wa thegana ma sapark garnu hola</small>
+<small>तपाई लाई कुनै समान बारे थप जानकारी चाहिएमा समान सँग दीएएको नंबर ,ईमेल,वा दीएएको ठेगाना म सम्पर्क गर्नुहोला |</small>
   
   <table class="table table-hover">
   <thead>
@@ -20,11 +45,10 @@
 <th>Total</th>
   </thead>
   <tbody>
-  @php $one=1;$grandtotal=0; @endphp
+  @php $one=1;$grandtotal=0; $h=0 @endphp
 
   @foreach($pdata as $value)
 @php   
-
 $path=explode("##",$value->pi);
 $len=count($path);
 $path1=trim($path[1],"public"); 
@@ -38,17 +62,11 @@ if($len==4){
   $path2=trim($path[2],"public"); 
   $path3=trim($path[3],"public"); 
 }
-
-
-
-
 $price=$value->pp  ;
 $tax=$price*1.5/100;
 $service=$price*1.5/100;
 $total=$tax+$service+$price;
 $grandtotal= $grandtotal+$total;
-
-
 @endphp
 
 <tr>
@@ -64,7 +82,7 @@ $grandtotal= $grandtotal+$total;
                     
 <span class="details">
        
-                               @if($value->r)<input type="checkbox" /> <span class="rang-red cart_rang rang"></span><br> @endif
+                                @if($value->r)<input type="checkbox"  /> <span class="rang-red cart_rang rang"></span><br> @endif
                                     @if($value->g)<input type="checkbox" /> <span class="rang-green cart_rang rang"></span> <br> @endif
                                     @if($value->b)<input type="checkbox" /> <span class="rang-black cart_rang rang"></span>  <br> @endif
                                     @if($value->gry)<input type="checkbox" /> <span class="rang-grey cart_rang rang"></span> <br>  @endif
@@ -108,9 +126,7 @@ $grandtotal= $grandtotal+$total;
 <a href="/makepdf">PDF</a>
 <!-- modelcodestart -->
 <!-- Button trigger modal -->
-<button  type="button" class="btn btn-success btn-block" data-toggle="modal" data-target="#exampleModal">
- Pay Now
-</button>
+
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -128,13 +144,18 @@ Digital_Bazar
         </button>
       </div>
       <div class="modal-body">
-       <h5>तपाईले समान बारे दिएको जानकारी सब ठीक छ छैन पुन : हेर्नुस |</h5>
-       <small>सब ठीक छ भने <kbd> ठीक छ</kbd> मा क्लिक गर्नुस् नत्र  <kbd> ठीक छैन</kbd> मा क्लिक गर्नुस् </small>
+      <h5>मोबाइल मा आएको चार आक्षयर को कोड लेख्नुस </h5>
+      <input type="text" class="form-control" wire:model="varificationcode" >
+       <!-- <h5>तपाईले समान बारे दिएको जानकारी सब ठीक छ छैन पुन : हेर्नुस |</h5>
+       <small>सब ठीक छ भने <kbd> ठीक छ</kbd> मा क्लिक गर्नुस् नत्र  <kbd> ठीक छैन</kbd> मा क्लिक गर्नुस् </small> -->
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-outline-danger" data-dismiss="modal">ठीक छैन</button>
         <!-- esewa code  -->
-        <form action="https://uat.esewa.com.np/epay/main" method="POST">
+
+
+
+   <form action="https://uat.esewa.com.np/epay/main" method="POST">
     <input id="esewagrandtotal" value="{{$grandtotal}}" name="tAmt" type="hidden">
     <input id="etax" value="{{$grandtotal}}" name="amt" type="hidden" >
     <input  value="0" name="txAmt" type="hidden">
@@ -157,15 +178,52 @@ Digital_Bazar
 
 
 
+</div>
+</div>
+<button  type="button" class="btn btn-success btn-block" data-toggle="modal" data-target="#exampleModal">
+ Pay Now
+</button>
+</div>
+</div>
+</div>
+
+@php 
+$date=date('H:i:s');
+
+$textdata="helllo iam testing";
+$name="order/".rand()."-order-".date('Y')."-".date('m')."-".date('d').".txt";
 
 
-</div>
-</div>
-</div>
+$file=fopen($name,'a');
+fwrite($file,"detail: \t");
+
+
+foreach($pdata as $value){
+  $file=fopen($name,'a');
+fwrite($file,$value->id." ");
+fwrite($file,$value->pn ."\t");
+}
+
+
+
+if(isset($_POST['result'])) {
+$data    = $_POST["result"];
+$data    = json_decode("$data", true);
+dd ($data[0]);
+
+}
+
+@endphp
+
+
+
+
+
+
+
+
+
 <script>
-
-
-
   function increment(e){
     let quentity=e.value;
     let total=$(e.parentElement).siblings(".price").text();
@@ -174,9 +232,6 @@ Digital_Bazar
         
     $(e.parentElement).siblings(".total").text(totalQuentity);
  
-
-
-
     var totalarray = document.getElementsByClassName("total");
     var grandtotal=1;
    for(var i=0;i<totalarray.length;i++){
@@ -188,17 +243,26 @@ Digital_Bazar
   //  eswacode start
    document.getElementById("esewagrandtotal").value=grandtotal;
    document.getElementById("etax").value=grandtotal;
-
    
-
 }
 
+</script>
+<script>
 
+var nproduct = document.getElementsByClassName("quentity");
+$(document).ready(function(){
+  
+$.ajax({
+type    : 'POST',
+url     : 'cart.blade.php',
+data    : {result:JSON.stringify(nproduct)},
+success : function(response) {
+   alert("good");
+}    
 
-
-
-
-
+});
+});
 </script>
    
 </div>
+

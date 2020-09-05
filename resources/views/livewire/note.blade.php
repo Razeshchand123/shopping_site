@@ -22,7 +22,10 @@
   
   
 @php 
+$a="hello";
 
+$file = fopen('rangabhai.txt', 'a') ;
+fwrite($file,$a);
 @endphp
 
 
@@ -35,3 +38,10 @@ var a=document.getElementsByClassName("numa")[0].value();
 console.log(a);
 </script>
    </div>
+<!-- continous slider owlcaraousel codepen -->
+   <!-- https://codepen.io/osingh/pen/wOqrPX -->
+
+
+
+
+   

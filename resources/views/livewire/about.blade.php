@@ -242,6 +242,20 @@ Digital_Bazar
 
 
 
+<!-- slider part start  -->
+<div class="row mt-5">
+
+<div class="col-sm-12 " data-aos='flip-down' >
+
+<hr>
+<h3 class="text-center"> हाम्रो सँग केही जोडिएका संस्थाहरु  </h3>
+<livewire:slider/>
+
+</div>
+
+</div>
+
+<!-- slider part end here  -->
 
 
 
