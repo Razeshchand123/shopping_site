@@ -7,27 +7,9 @@
 <div class="col-sm-11 mx-auto">
 <div class="row">
 <div class="col-sm-4" style="display:grid;place-items:center;">
-<h5 style="margin-top:13%">aafno jankari dinus</h5>
-<form  wire:submit.prevent="textdetail" class="form-group"><br>
-<input type="text" wire:model="buyername" class="form-control" placeholder="तपाईको नाम"><br>
-<input type="text" wire:model="buyerdistrict " class="form-control" placeholder="तपाईको जिल्ला"><br>
-<input type="text" wire:model="buyervillagename " class="form-control" placeholder="तपाईको गाउ वा सहरको नाम "><br>
-<input type="text" wire:model="buyerward " class="form-control" placeholder="तपाईको वार्ड "><br>
-<input type="text"wire:model="landmark " class="form-control" placeholder="घर नजिक को प्रसिद्ध ठाउ"><br>
-<input type="text" wire:model="buyermobile " class="form-control" placeholder="तपाईको मोबाइल नंबर"><br>
-<small>yo number ma varification code aaun6</small><br>
-
-
-</form>
+<livewire:buyerform/>
 </div>
 <div class="col-sm-8">
-
-
-
-
-
-
-
 <h1 class="text-center">YOUR PRODUCTS ARE::</h1>
 <small>तपाई लाई कुनै समान बारे थप जानकारी चाहिएमा समान सँग दीएएको नंबर ,ईमेल,वा दीएएको ठेगाना म सम्पर्क गर्नुहोला |</small>
   
@@ -116,8 +98,8 @@ $grandtotal= $grandtotal+$total;
 <td></td>
 <td></td>
 <td></td>
-<td>TOTAL RS.</td>
-<td id="total" class="text-center" >{{$grandtotal}}</td>
+<td>TOTAL </td>
+<td ><span>Rs.  </span><span id="total" class="text-center" >{{$grandtotal}}</span></td>
 </tr>
 
 </thead>
@@ -145,16 +127,14 @@ Digital_Bazar
       </div>
       <div class="modal-body">
       <h5>मोबाइल मा आएको चार आक्षयर को कोड लेख्नुस </h5>
-      <input type="text" class="form-control" wire:model="varificationcode" >
+      <input type="text" class="form-control" wire:model="varificationcode" placeholder="--- X X X X ---" >
        <!-- <h5>तपाईले समान बारे दिएको जानकारी सब ठीक छ छैन पुन : हेर्नुस |</h5>
        <small>सब ठीक छ भने <kbd> ठीक छ</kbd> मा क्लिक गर्नुस् नत्र  <kbd> ठीक छैन</kbd> मा क्लिक गर्नुस् </small> -->
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-outline-danger" data-dismiss="modal">ठीक छैन</button>
+        <!-- <button type="button" class="btn btn-outline-danger" data-dismiss="modal">ठीक छैन</button> -->
         <!-- esewa code  -->
-
-
-
+    @if($varificationcode=="4444")
    <form action="https://uat.esewa.com.np/epay/main" method="POST">
     <input id="esewagrandtotal" value="{{$grandtotal}}" name="tAmt" type="hidden">
     <input id="etax" value="{{$grandtotal}}" name="amt" type="hidden" >
@@ -169,6 +149,8 @@ Digital_Bazar
     <input value="http://merchant.com.np/page/esewa_payment_failed?q=fu" type="hidden" name="fu">
     <input value="ठीक छ" type="submit" class="btn btn-outline-success btn-block">
     </form>
+
+    @endif
         <!-- esewacode -->
       </div>
     </div>

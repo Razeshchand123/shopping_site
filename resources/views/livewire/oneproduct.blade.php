@@ -105,6 +105,8 @@ if($len==4){
 
 
 
+
+<!-- 
      <form action="https://uat.esewa.com.np/epay/main" method="POST">
     <input value="{{$value->pp + 10}}" name="tAmt" type="hidden">
     <input value="{{$value->pp}}" name="amt" type="hidden">
@@ -118,11 +120,11 @@ if($len==4){
     <button value="Submit" type="submit" target="_blank" class="btn">
      <img class="ml-2" src="http://127.0.0.1:8000/storage/thispics/card1.png" alt="" height="50">
      </button>
-    </form>
+    </form> -->
     
 
-    <a href=""><img class="ml-2" src="http://127.0.0.1:8000/storage/thispics/khalti.png" alt="" height="60">
- </a>
+    <a href="/cart/++{{$value->id}}"><img class="ml-2" src="http://127.0.0.1:8000/storage/thispics/buynow.png" alt="" height="60">
+ </a> 
       </li>
     </ul>
 

@@ -29,7 +29,6 @@ fwrite($file,$a);
 @endphp
 
 
-
   
   <script>
   
@@ -45,3 +44,18 @@ console.log(a);
 
 
    
+
+
+
+best love story 
+veer zara
+i virus
+Magadheera
+Jhon wick
+
+
+songs 
+neel samdram
+
+
+

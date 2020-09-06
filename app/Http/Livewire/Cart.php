@@ -20,7 +20,7 @@ class Cart extends Component
     public $landmark;
     public $buyermobile;
     public $buyerward ;
-    public $varificationcode="X X X X";
+    public $varificationcode=4444;
  
 
 
@@ -29,11 +29,12 @@ class Cart extends Component
 
      public function mount($collection){
 
-    
-
         $this->collection=$collection;  
         session()->put("nuberofids",$this->collection);
      }
+
+
+
 
 
 public function postAdded1($bill){
@@ -52,6 +53,7 @@ public function postAdded1($bill){
         }
  }
 
+ 
 
     public function render()
     {
